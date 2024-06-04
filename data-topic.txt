@@ -1,0 +1,25 @@
+aws dynamodb scan \
+   --table-name fap-web-tags-paid \
+   --filter-expression "plate = :partition" \
+   --expression-attribute-values '{":partition":{"S":"EHZ003"}}'
+
+aws dynamodb query \
+    --table-name fap-commons-pro-history-movs-pre \
+    --key-condition-expression "dateId = :partitionKey" \
+    --filter-expression "traceId = :trace" \
+    --expression-attribute-values '{
+        ":partitionKey": {"S": "2024-04-08"},
+        ":trace": {"S": "89f85aa9-137c-4fc3-ba70-1bdcb09cd21a"}    
+    }'
+
+aws dynamodb get-item \
+   --table-name fap-accounts \
+   --key '{"accountId": {"N": "37183"}}'
+
+aws dynamodb get-item \
+   --table-name fap-save-balance-history \
+   --key '{"partitionKey": {"S": "2024-04-08"}, "sortKey": {"S": "PRE::37183"}}'
+
+aws dynamodb get-item \
+   --table-name fap-web-tags-paid \
+   --key '{"id": {"S": "E2003412012BFA000FBE7E59"}}'
