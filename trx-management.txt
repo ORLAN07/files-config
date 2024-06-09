@@ -1,0 +1,51 @@
+# Consullta de todos los movimientos por fecha
+aws dynamodb query \
+    --table-name fap-movements-detail \
+    --index-name accountId-processDate-index \
+    --key-condition-expression "accountId = :accountId AND processDate BETWEEN :startDate AND :endDate" \
+    --expression-attribute-values '{
+        ":accountId": {"S": "18940"},
+        ":startDate": {"S": "2024-05-20T00:00:00.000"},
+        ":endDate": {"S": "2024-05-30T23:59:59.000"}
+    }'> 18940.json
+
+# Backup del Movimiento a eliminar
+aws dynamodb query \
+    --table-name fap-movements-detail \
+    --key-condition-expression "partitionKey = :partitionKey AND sortKey = :sortKey" \
+    --expression-attribute-values '{
+        ":partitionKey": {"S": "3891300241::PASO::2024-04-08"},
+        ":sortKey": {"S": "2024-04-08T19:11:34.767::DB::f4ebb230-8b78-444b-9ce1-53b9ceb983ba"}
+    }' > backup_manuelita_mov.json
+
+# Eliminar Movimiento del Cliente
+aws dynamodb delete-item \
+    --table-name fap-movements-detail \
+    --key '{
+        "partitionKey": {"S": "3891300241::PASO::2024-04-08"},
+        "sortKey": {"S": "2024-04-08T19:11:34.767::DB::f4ebb230-8b78-444b-9ce1-53b9ceb983ba"}
+    }'
+
+#Stop FAcilpass Operation Commons
+aws lambda list-event-source-mappings --function-name fap-commons-pro-a5-process-toll-transaction --region us-east-2
+aws lambda update-event-source-mapping --uuid 92f71306-6ac6-44a7-b76b-8e8bf13e2129 --no-enabled --region us-east-2
+
+#Consulta Fap Accounts Toll
+aws dynamodb get-item --table-name fap-accounts --key '{"accountId": {"N": "37183"}}' --region us-east-2 > backup_cuenta_manuelita.json
+aws dynamodb get-item --table-name fap-accounts --key '{"accountId": {"N": "37183"}}' --region us-east-2 | grep balance -B 2 -A 2
+
+# Ajustar Saldo del Cliente
+aws dynamodb update-item \
+    --table-name fap-accounts \
+    --region us-east-2 \
+    --key '{"accountId": {"N": "37183"}}' \
+    --update-expression 'SET #v = :newValue' \
+    --expression-attribute-names '{"#v": "balance"}' \
+    --expression-attribute-values '{":newValue": {"N": "9227900"}}'
+
+#Activate Commons Operation
+aws lambda update-event-source-mapping --uuid 92f71306-6ac6-44a7-b76b-8e8bf13e2129 --enabled --region us-east-2
+
+
+
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.1.146:/home/ubuntu/scripts/dynamodb/scans/fap_users.csv /Users/orlando.rubio/Documents/

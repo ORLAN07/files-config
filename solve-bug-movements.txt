@@ -1,0 +1,304 @@
+modificacion de movimientos
+save-movements-details 
+transaction-movs-pre
+
+
+aws dynamodb query \
+    --table-name fap-movements-detail \
+    --index-name accountId-processDate-index \
+    --key-condition-expression "accountId = :accountId AND processDate BETWEEN :startDate AND :endDate" \
+    --expression-attribute-values '{
+        ":accountId": {"S": "8364"},
+        ":startDate": {"S": "2024-05-31T00:00:00.000"},
+        ":endDate": {"S": "2024-05-31T23:59:59.000"}
+    }'> 8364.json
+
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.1.146:/home/ubuntu/scripts/dynamodb/8357.json /Users/orlando.rubio/Documents/
+
+#update data
+aws dynamodb update-item \
+ --table-name fap-movements-detail \
+ --key '{"partitionKey":{"S":"3900323642::AJUSTE_PASO::2024-05-31"}, "sortKey":{"S":"2024-05-31T22:24:46.082::DB::ed0323da-8cfc-431d-bb36-4574c37ea635"}}' \
+ --update-expression 'SET #H = :h' \
+ --expression-attribute-names '{"#H":"processDate"}' \
+ --expression-attribute-values '{":h":{"S":"2024-04-30T16:24:45.875"}}'
+
+#Rollback por peticion de jhon castro
+aws dynamodb update-item \
+ --table-name fap-movements-detail \
+ --key '{"partitionKey":{"S":"3900323642::AJUSTE_PASO::2024-05-31"}, "sortKey":{"S":"2024-05-31T22:24:46.082::DB::ed0323da-8cfc-431d-bb36-4574c37ea635"}}' \
+ --update-expression 'SET #H = :h' \
+ --expression-attribute-names '{"#H":"processDate"}' \
+ --expression-attribute-values '{":h":{"S":"2024-05-31T22:24:45.875"}}'
+
+#transaction-movs-pre
+aws dynamodb scan \
+   --table-name fap-commons-pro-movs-transactions-pre \
+   --filter-expression "accountId = :partition and traceId = :trace" \
+   --expression-attribute-values '{":partition":{"S":"8364"}, ":trace":{"S":"f48dd0ef-c1da-4c43-9665-f414bed77c9d"}}'
+
+
+aws dynamodb query \
+    --table-name fap-commons-pro-movs-transactions-pre \
+    --index-name accountId-processDate-index \
+    --key-condition-expression "accountId = :accountId AND processDate BETWEEN :startDate AND :endDate" \
+    --expression-attribute-values '{
+        ":accountId": {"S": "8364"},
+        ":startDate": {"S": "2024-05-31T00:00:00.000"},
+        ":endDate": {"S": "2024-05-31T23:59:59.000"}
+    }'
+
+
+aws dynamodb query \
+    --table-name fap-movements-detail \
+    --index-name accountId-processDate-index \
+    --key-condition-expression "accountId = :accountId AND processDate BETWEEN :startDate AND :endDate" \
+    --expression-attribute-values '{
+        ":accountId": {"S": "8357"},
+        ":startDate": {"S": "2024-05-31T00:00:00.000"},
+        ":endDate": {"S": "2024-05-31T23:59:59.000"}
+    }'> 8357.json
+
+aws dynamodb update-item \
+ --table-name fap-movements-detail \
+ --key '{"partitionKey":{"S":"3890200474::AJUSTE_PASO::2024-05-31"}, "sortKey":{"S":"2024-05-31T22:25:25.980::CR::89cd29bb-8cdd-4a92-b469-53c17520efd9"}}' \
+ --update-expression 'SET #field1 = :val1, #field2 = :val2' \
+ --expression-attribute-names '{"#field1":"processDate", "#field2":"amount"}' \
+ --expression-attribute-values '{":val1":{"S":"2024-04-30T16:24:45.875"}, ":val2":{"N":"29500"}}'
+
+
+*****
+
+aws dynamodb query \
+    --table-name fap-movements-detail \
+    --index-name accountId-processDate-index \
+    --key-condition-expression "accountId = :accountId AND processDate BETWEEN :startDate AND :endDate" \
+    --expression-attribute-values '{
+        ":accountId": {"S": "18940"},
+        ":startDate": {"S": "2024-05-31T00:00:00.000"},
+        ":endDate": {"S": "2024-05-31T23:59:59.000"}
+    }'> 18940.json
+
+aws dynamodb update-item \
+ --table-name fap-movements-detail \
+ --key '{"partitionKey":{"S":"3860005108::AJUSTE_PASO::2024-05-31"}, "sortKey":{"S":"2024-05-31T22:25:23.424::CR::58f24a66-1523-4ca5-94a9-66a476a87f06"}}' \
+ --update-expression 'SET #field1 = :val1, #field2 = :val2' \
+ --expression-attribute-names '{"#field1":"processDate", "#field2":"amount"}' \
+ --expression-attribute-values '{":val1":{"S":"2024-04-30T16:24:45.875"}, ":val2":{"N":"16000"}}'
+
+ *********
+
+ aws dynamodb query \
+    --table-name fap-movements-detail \
+    --index-name accountId-processDate-index \
+    --key-condition-expression "accountId = :accountId AND processDate BETWEEN :startDate AND :endDate" \
+    --expression-attribute-values '{
+        ":accountId": {"S": "16026"},
+        ":startDate": {"S": "2024-05-31T00:00:00.000"},
+        ":endDate": {"S": "2024-05-31T23:59:59.000"}
+    }'> 16026.json
+
+
+aws dynamodb update-item \
+ --table-name fap-movements-detail \
+ --key '{"partitionKey":{"S":"3900812184::AJUSTE_PASO::2024-05-31"}, "sortKey":{"S":"2024-05-31T22:25:27.201::CR::9874ec34-d99e-42c0-a5b0-5e6514c9a0f6"}}' \
+ --update-expression 'SET #field1 = :val1, #field2 = :val2' \
+ --expression-attribute-names '{"#field1":"processDate", "#field2":"amount"}' \
+ --expression-attribute-values '{":val1":{"S":"2024-04-30T16:24:45.875"}, ":val2":{"N":"56100"}}'
+
+ aws dynamodb query \
+    --table-name fap-movements-detail \
+    --index-name accountId-processDate-index \
+    --key-condition-expression "accountId = :accountId AND processDate BETWEEN :startDate AND :endDate" \
+    --expression-attribute-values '{
+        ":accountId": {"S": "16026"},
+        ":startDate": {"S": "2024-04-30T00:00:00.000"},
+        ":endDate": {"S": "2024-04-30T23:59:59.000"}
+    }'> 16026-2.json
+
+
+***********
+
+ aws dynamodb query \
+    --table-name fap-movements-detail \
+    --index-name accountId-processDate-index \
+    --key-condition-expression "accountId = :accountId AND processDate BETWEEN :startDate AND :endDate" \
+    --expression-attribute-values '{
+        ":accountId": {"S": "38565"},
+        ":startDate": {"S": "2024-05-31T00:00:00.000"},
+        ":endDate": {"S": "2024-05-31T23:59:59.000"}
+    }'> 38565.json
+
+
+aws dynamodb update-item \
+ --table-name fap-movements-detail \
+ --key '{"partitionKey":{"S":"3891409088::AJUSTE_PASO::2024-05-31"}, "sortKey":{"S":"2024-05-31T22:25:24.679::CR::ed132b51-6143-47ba-a5fd-136d932e968a"}}' \
+ --update-expression 'SET #field1 = :val1, #field2 = :val2' \
+ --expression-attribute-names '{"#field1":"processDate", "#field2":"amount"}' \
+ --expression-attribute-values '{":val1":{"S":"2024-04-30T16:24:45.875"}, ":val2":{"N":"17000"}}'
+
+ aws dynamodb query \
+    --table-name fap-movements-detail \
+    --index-name accountId-processDate-index \
+    --key-condition-expression "accountId = :accountId AND processDate BETWEEN :startDate AND :endDate" \
+    --expression-attribute-values '{
+        ":accountId": {"S": "38565"},
+        ":startDate": {"S": "2024-04-30T00:00:00.000"},
+        ":endDate": {"S": "2024-04-30T23:59:59.000"}
+    }'> 38565-2.json
+
+ ------------------------------------   commons
+ aws dynamodb query \
+    --table-name fap-commons-pro-movs-transactions-pre  \
+    --key-condition-expression "dateId = :value1" \
+    --filter-expression "traceId = :value2" \
+    --expression-attribute-values '{":value1":{"S":"2024-05-31"}, ":value2":{"S":"e1c0e8cf-f6bb-4005-8c59-5ff0898b9f38"}}'> 8357-commons.json
+
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.5.207:/home/ubuntu/scripts/dynamodb/8357-commons.json /Users/orlando.rubio/Documents/
+
+aws dynamodb delete-item \
+    --table-name fap-commons-pro-movs-transactions-pre \
+    --key '{"dateId": {"S": "2024-05-31"}, "dateTimeRange": {"S": "2024-05-31T22:25:25.797161476"}}'
+
+aws dynamodb put-item \
+    --table-name fap-commons-pro-movs-transactions-pre \
+    --item '{ "detail": { "S": "Paso" }, "ttl": { "N": "1733023526" }, "transactionType": { "N": "4" }, "channel": { "S": "2" }, "reference": { "S": "Ajuste Paso crédito Peaje Prepago May" }, "accountStatus": { "S": "Activo" }, "data": { "M": { "tollReferenceCode": { "S": "10156_2440010000010000063312902" }, "axisCount": { "S": "2" }, "contractNumber": { "S": "17551701042" }, "nure": { "S": "83574745" }, "plate": { "S": "WFC569" }, "originator": { "S": "10156" }, "faceId": { "S": "3C93CFAE" }, "doubleWheelCount": { "S": "0" }, "readingType": { "N": "1" }, "tid": { "S": "E2C068922000C1023C93CFAE" }, "idTransaction": { "S": "f18d1f7c-6240-4f89-b22c-86ef12221d1e" }, "userUpdateDate": { "S": "2021-11-30T09:10:06.077" }, "discleimerConcesion": { "S": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario" }, "collectionAgreement": { "S": "8001408878" }, "userListCode": { "S": "10037_20211130_00058T" }, "existsDependency": { "S": "false" }, "laneId": { "S": "6" }, "motivoAjuste": { "S": "1" }, "plateOCR": { "S": "WFC569" }, "amountTollReference": { "S": "295000" }, "directionWay": { "S": "SUR-NOR" }, "epc": { "S": "1.1111111111111111e+23" }, "providerTraceId": { "S": "10156_2440010000010000063312902_31" } } }, "concept": { "S": "Ajuste" }, "segment": { "S": "pj" }, "personIdType": { "S": "3" }, "dateTimeRange": { "S": "2024-04-30T16:24:45.161476" }, "agreement": { "S": "9009209521" }, "dateCreation": { "S": "2024-05-31T22:25:26.037449" }, "accountingEffect": { "S": "CR" }, "station": { "M": { "name": { "S": "PANDEQUESO" }, "code": { "S": "1002" } } }, "traceId": { "S": "e1c0e8cf-f6bb-4005-8c59-5ff0898b9f38" }, "processDate": { "S": "2024-04-30T16:24:45.875" }, "shortName": { "S": "AJUSTE_PASO" }, "accountId": { "S": "8357" }, "agreementName": { "S": "VINUS" }, "service": { "M": { "name": { "S": "Peajes" }, "code": { "S": "peaje" } } }, "dateId": { "S": "2024-04-30" }, "accountType": { "S": "PRE" }, "notifyDate": { "S": "2024-06-01T03:25:24.120" }, "sequence": { "N": "2024053100000000048044" }, "month": { "S": "May" }, "amount": { "N": "29500" }, "description": { "S": "Ajuste Paso crédito Peaje Prepago" }, "dateTransaction": { "S": "2023-12-03T23:02:26.260" }, "personId": { "S": "3890200474" } }'
+
+
+--------------------------------
+
+ aws dynamodb query \
+    --table-name fap-commons-pro-movs-transactions-pre  \
+    --key-condition-expression "dateId = :value1" \
+    --filter-expression "traceId = :value2" \
+    --expression-attribute-values '{":value1":{"S":"2024-05-31"}, ":value2":{"S":"cc069dfa-8b48-4cba-8240-e5c242481f67"}}'> 18940-commons.json
+
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.5.207:/home/ubuntu/scripts/dynamodb/18940-commons.json /Users/orlando.rubio/Documents/
+
+aws dynamodb delete-item \
+    --table-name fap-commons-pro-movs-transactions-pre \
+    --key '{"dateId": {"S": "2024-05-31"}, "dateTimeRange": {"S": "2024-05-31T22:25:23.273062504"}}'
+
+aws dynamodb put-item \
+    --table-name fap-commons-pro-movs-transactions-pre \
+    --item '{ "detail": { "S": "Paso" }, "ttl": { "N": "1733023523" }, "transactionType": { "N": "4" }, "channel": { "S": "2" }, "reference": { "S": "Ajuste Paso crédito Peaje Prepago May" }, "accountStatus": { "S": "Activo" }, "data": { "M": { "tollReferenceCode": { "S": "10156_2430010000030000012700681" }, "axisCount": { "S": "2" }, "contractNumber": { "S": "17551701042" }, "nure": { "S": "189401081" }, "plate": { "S": "JRY749" }, "originator": { "S": "10156" }, "faceId": { "S": "3C933CE2" }, "doubleWheelCount": { "S": "0" }, "readingType": { "N": "1" }, "tid": { "S": "E2C06892200009023C933CE2" }, "idTransaction": { "S": "fd9db05f-0a7d-47bb-bf63-e17a62c4b869" }, "userUpdateDate": { "S": "2021-11-30T09:10:06.077" }, "discleimerConcesion": { "S": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario" }, "collectionAgreement": { "S": "8001408878" }, "userListCode": { "S": "10037_20211130_00058T" }, "existsDependency": { "S": "false" }, "laneId": { "S": "1" }, "motivoAjuste": { "S": "1" }, "plateOCR": { "S": "JRY749" }, "amountTollReference": { "S": "160000" }, "directionWay": { "S": "NOR-SUR" }, "epc": { "S": "1.1111111111111111e+23" }, "providerTraceId": { "S": "10156_2430010000030000012700681_31" } } }, "concept": { "S": "Ajuste" }, "segment": { "S": "pj" }, "personIdType": { "S": "3" }, "dateTimeRange": { "S": "2024-04-30T16:24:45.875062504" }, "agreement": { "S": "9009209521" }, "dateCreation": { "S": "2024-05-31T22:25:23.467331" }, "accountingEffect": { "S": "CR" }, "station": { "M": { "name": { "S": "TRAPICHE" }, "code": { "S": "1003" } } }, "traceId": { "S": "cc069dfa-8b48-4cba-8240-e5c242481f67" }, "processDate": { "S": "2024-04-30T16:24:45.875" }, "shortName": { "S": "AJUSTE_PASO" }, "accountId": { "S": "18940" }, "agreementName": { "S": "VINUS" }, "service": { "M": { "name": { "S": "Peajes" }, "code": { "S": "peaje" } } }, "dateId": { "S": "2024-04-30" }, "accountType": { "S": "PRE" }, "notifyDate": { "S": "2024-06-01T03:25:21.607" }, "sequence": { "N": "2024053100000000048040" }, "month": { "S": "May" }, "amount": { "N": "16000" }, "description": { "S": "Ajuste Paso crédito Peaje Prepago" }, "dateTransaction": { "S": "2023-12-11T21:01:51.510" }, "personId": { "S": "3860005108" } }'
+
+
+aws dynamodb query \
+    --table-name fap-commons-pro-movs-transactions-pre  \
+    --key-condition-expression "dateId = :value1" \
+    --filter-expression "traceId = :value2" \
+    --expression-attribute-values '{":value1":{"S":"2024-04-30"}, ":value2":{"S":"cc069dfa-8b48-4cba-8240-e5c242481f67"}}'
+
+
+------------------------
+
+aws dynamodb query \
+    --table-name fap-commons-pro-movs-transactions-pre  \
+    --key-condition-expression "dateId = :value1" \
+    --filter-expression "traceId = :value2" \
+    --expression-attribute-values '{":value1":{"S":"2024-05-31"}, ":value2":{"S":"1de7eb9a-a2b1-45cd-98bc-bae6409fe508"}}'> 16026-commons.json
+
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.5.207:/home/ubuntu/scripts/dynamodb/18940-commons.json /Users/orlando.rubio/Documents/
+
+aws dynamodb delete-item \
+    --table-name fap-commons-pro-movs-transactions-pre \
+    --key '{"dateId": {"S": "2024-05-31"}, "dateTimeRange": {"S": "2024-05-31T22:25:27.027719638"}}'
+
+aws dynamodb put-item \
+    --table-name fap-commons-pro-movs-transactions-pre \
+    --item '{ "detail": { "S": "Paso" }, "ttl": { "N": "1733023527" }, "transactionType": { "N": "4" }, "channel": { "S": "2" }, "reference": { "S": "Ajuste Paso crédito Peaje Prepago May" }, "accountStatus": { "S": "Activo" }, "data": { "M": { "tollReferenceCode": { "S": "10156_2440010000050000011445685" }, "axisCount": { "S": "2" }, "contractNumber": { "S": "17551701042" }, "nure": { "S": "160261846" }, "plate": { "S": "SNT981" }, "originator": { "S": "10156" }, "faceId": { "S": "0E03C00E" }, "doubleWheelCount": { "S": "0" }, "readingType": { "N": "1" }, "tid": { "S": "E2003412013BFA000E03C00E" }, "idTransaction": { "S": "6e5a6d5e-f8c2-4c7f-8abd-cfd8d192e84a" }, "userUpdateDate": { "S": "2021-11-30T09:10:06.077" }, "discleimerConcesion": { "S": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario" }, "collectionAgreement": { "S": "8001408878" }, "userListCode": { "S": "10037_20211130_00058T" }, "existsDependency": { "S": "false" }, "laneId": { "S": "1" }, "motivoAjuste": { "S": "1" }, "plateOCR": { "S": "SNT981" }, "amountTollReference": { "S": "561000" }, "directionWay": { "S": "NOR-SUR" }, "epc": { "S": "7.7061131e+23" }, "providerTraceId": { "S": "10156_2440010000050000011445685_31" } } }, "concept": { "S": "Ajuste" }, "segment": { "S": "pj" }, "personIdType": { "S": "3" }, "dateTimeRange": { "S": "2024-04-30T16:24:45.875719638" }, "agreement": { "S": "9009209521" }, "dateCreation": { "S": "2024-05-31T22:25:27.243408" }, "accountingEffect": { "S": "CR" }, "station": { "M": { "name": { "S": "CISNEROS" }, "code": { "S": "1005" } } }, "traceId": { "S": "1de7eb9a-a2b1-45cd-98bc-bae6409fe508" }, "processDate": { "S": "2024-04-30T16:24:45.875" }, "shortName": { "S": "AJUSTE_PASO" }, "accountId": { "S": "16026" }, "agreementName": { "S": "VINUS" }, "service": { "M": { "name": { "S": "Peajes" }, "code": { "S": "peaje" } } }, "dateId": { "S": "2024-04-30" }, "accountType": { "S": "PRE" }, "notifyDate": { "S": "2024-06-01T03:25:25.346" }, "sequence": { "N": "2024053100000000048045" }, "month": { "S": "May" }, "amount": { "N": "56100" }, "description": { "S": "Ajuste Paso crédito Peaje Prepago" }, "dateTransaction": { "S": "2023-12-12T16:45:12.120" }, "personId": { "S": "3900812184" } }'
+
+
+aws dynamodb query \
+    --table-name fap-commons-pro-movs-transactions-pre  \
+    --key-condition-expression "dateId = :value1" \
+    --filter-expression "traceId = :value2" \
+    --expression-attribute-values '{":value1":{"S":"2024-04-30"}, ":value2":{"S":"1de7eb9a-a2b1-45cd-98bc-bae6409fe508"}}'
+
+ ------------------------
+
+aws dynamodb query \
+    --table-name fap-commons-pro-movs-transactions-pre  \
+    --key-condition-expression "dateId = :value1" \
+    --filter-expression "traceId = :value2" \
+    --expression-attribute-values '{":value1":{"S":"2024-05-31"}, ":value2":{"S":"a5b51f6e-7a74-4c30-8c72-63f536fb5e59"}}'> 38565-commons.json
+
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.5.207:/home/ubuntu/scripts/dynamodb/18940-commons.json /Users/orlando.rubio/Documents/
+
+aws dynamodb delete-item \
+    --table-name fap-commons-pro-movs-transactions-pre \
+    --key '{"dateId": {"S": "2024-05-31"}, "dateTimeRange": {"S": "2024-05-31T22:25:24.535838104"}}'
+
+aws dynamodb put-item \
+    --table-name fap-commons-pro-movs-transactions-pre \
+    --item '{ "detail": { "S": "Paso" }, "ttl": { "N": "1733023524" }, "transactionType": { "N": "4" }, "channel": { "S": "2" }, "reference": { "S": "Ajuste Paso crédito Peaje Prepago May" }, "accountStatus": { "S": "Activo" }, "data": { "M": { "tollReferenceCode": { "S": "10156_2430010000030000012705479" }, "axisCount": { "S": "2" }, "contractNumber": { "S": "17551701042" }, "nure": { "S": "385650888" }, "plate": { "S": "ESU101" }, "originator": { "S": "10156" }, "faceId": { "S": "3C8F3AF7" }, "doubleWheelCount": { "S": "0" }, "readingType": { "N": "1" }, "tid": { "S": "E2C06892200044023C8F3AF7" }, "idTransaction": { "S": "4e17c2fc-7d3f-4663-8f2c-ad53784b816a" }, "userUpdateDate": { "S": "2021-11-30T09:10:06.077" }, "discleimerConcesion": { "S": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario" }, "collectionAgreement": { "S": "8001408878" }, "userListCode": { "S": "10037_20211130_00058T" }, "existsDependency": { "S": "false" }, "laneId": { "S": "1" }, "motivoAjuste": { "S": "1" }, "plateOCR": { "S": "ESU101" }, "amountTollReference": { "S": "170000" }, "directionWay": { "S": "NOR-SUR" }, "epc": { "S": "1.1111111111111111e+23" }, "providerTraceId": { "S": "10156_2430010000030000012705479_31" } } }, "concept": { "S": "Ajuste" }, "segment": { "S": "pj" }, "personIdType": { "S": "3" }, "dateTimeRange": { "S": "2024-04-30T16:24:45.875838104" }, "agreement": { "S": "9009209521" }, "dateCreation": { "S": "2024-05-31T22:25:24.757351" }, "accountingEffect": { "S": "CR" }, "station": { "M": { "name": { "S": "TRAPICHE" }, "code": { "S": "1003" } } }, "traceId": { "S": "a5b51f6e-7a74-4c30-8c72-63f536fb5e59" }, "processDate": { "S": "2024-04-30T16:24:45.875" }, "shortName": { "S": "AJUSTE_PASO" }, "accountId": { "S": "38565" }, "agreementName": { "S": "VINUS" }, "service": { "M": { "name": { "S": "Peajes" }, "code": { "S": "peaje" } } }, "dateId": { "S": "2024-04-30" }, "accountType": { "S": "PRE" }, "notifyDate": { "S": "2024-06-01T03:25:22.867" }, "sequence": { "N": "2024053100000000048042" }, "month": { "S": "May" }, "amount": { "N": "17000" }, "description": { "S": "Ajuste Paso crédito Peaje Prepago" }, "dateTransaction": { "S": "2023-12-12T16:57:13.130" }, "personId": { "S": "3891409088" } }'
+
+
+aws dynamodb query \
+    --table-name fap-commons-pro-movs-transactions-pre  \
+    --key-condition-expression "dateId = :value1" \
+    --filter-expression "traceId = :value2" \
+    --expression-attribute-values '{":value1":{"S":"2024-04-30"}, ":value2":{"S":"a5b51f6e-7a74-4c30-8c72-63f536fb5e59"}}'
+
+
+
+******************************
+aws dynamodb get-item --table-name fap-accounts --key '{"accountId": {"N": "8357"}}' --region us-east-2 > backup_account_8357.json
+aws dynamodb get-item --table-name fap-accounts --key '{"accountId": {"N": "34183"}}' --region us-east-2 | grep balance -B 2 -A 2
+
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.1.146:/home/ubuntu/scripts/dynamodb/backup_account_34183.json /Users/orlando.rubio/Documents/
+
+# Ajustar Saldo del Cliente
+aws dynamodb update-item \
+    --table-name fap-accounts \
+    --region us-east-2 \
+    --key '{"accountId": {"N": "8357"}}' \
+    --update-expression 'SET #v = :newValue' \
+    --expression-attribute-names '{"#v": "balance"}' \
+    --expression-attribute-values '{":newValue": {"N": "5678200"}}'
+
+******************************
+aws dynamodb get-item --table-name fap-accounts --key '{"accountId": {"N": "18940"}}' --region us-east-2 > backup_account_18940.json
+aws dynamodb get-item --table-name fap-accounts --key '{"accountId": {"N": "18940"}}' --region us-east-2 | grep balance -B 2 -A 2
+
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.1.146:/home/ubuntu/scripts/dynamodb/backup_account_34183.json /Users/orlando.rubio/Documents/
+
+# Ajustar Saldo del Cliente
+aws dynamodb update-item \
+    --table-name fap-accounts \
+    --region us-east-2 \
+    --key '{"accountId": {"N": "18940"}}' \
+    --update-expression 'SET #v = :newValue' \
+    --expression-attribute-names '{"#v": "balance"}' \
+    --expression-attribute-values '{":newValue": {"N": "44700813"}}'
+
+******************************
+aws dynamodb get-item --table-name fap-accounts --key '{"accountId": {"N": "16026"}}' --region us-east-2 > backup_account_16026.json
+aws dynamodb get-item --table-name fap-accounts --key '{"accountId": {"N": "16026"}}' --region us-east-2 | grep balance -B 2 -A 2
+
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.1.146:/home/ubuntu/scripts/dynamodb/backup_account_34183.json /Users/orlando.rubio/Documents/
+
+# Ajustar Saldo del Cliente
+aws dynamodb update-item \
+    --table-name fap-accounts \
+    --region us-east-2 \
+    --key '{"accountId": {"N": "16026"}}' \
+    --update-expression 'SET #v = :newValue' \
+    --expression-attribute-names '{"#v": "balance"}' \
+    --expression-attribute-values '{":newValue": {"N": "7887900"}}'
+
+******************************
+aws dynamodb get-item --table-name fap-accounts --key '{"accountId": {"N": "38565"}}' --region us-east-2 > backup_account_38565.json
+aws dynamodb get-item --table-name fap-accounts --key '{"accountId": {"N": "38565"}}' --region us-east-2 | grep balance -B 2 -A 2
+
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.1.146:/home/ubuntu/scripts/dynamodb/backup_account_34183.json /Users/orlando.rubio/Documents/
+
+# Ajustar Saldo del Cliente
+aws dynamodb update-item \
+    --table-name fap-accounts \
+    --region us-east-2 \
+    --key '{"accountId": {"N": "38565"}}' \
+    --update-expression 'SET #v = :newValue' \
+    --expression-attribute-names '{"#v": "balance"}' \
+    --expression-attribute-values '{":newValue": {"N": "238400"}}'

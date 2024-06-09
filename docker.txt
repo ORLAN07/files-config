@@ -1,0 +1,2 @@
+docker run -it --rm redis redis-cli -h fap-commons-dev-redis-001.rquwbc.0001.use2.cache.amazonaws.com -p 6379
+HGETALL "fpass_partial_core_lists"
