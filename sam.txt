@@ -1,0 +1,7 @@
+WORKSHOP SAM
+sam init
+sam local start-api --port 8080
+pip3 install pytest pytest-mock
+python3 -m pytest tests/unit
+sam build
+sam deploy --guided
