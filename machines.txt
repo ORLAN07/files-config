@@ -1,0 +1,8 @@
+Máquinas FP Commons Powers:
+dev: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.155.12.199
+stg: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.155.17.227
+Prod: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.156.5.207
+Máquinas FP Toll Powers:
+dev: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.155.12.226
+stg: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.155.17.244
+Prod: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.156.1.146

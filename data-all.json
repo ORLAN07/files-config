@@ -1,0 +1,143 @@
+[
+    {
+        "lastNames": {
+            "S": "OUROPSU"
+        },
+        "phoneNumber": {
+            "S": "7846202123"
+        },
+        "accounts": {
+            "L": [
+                {
+                    "S": "29557"
+                }
+            ]
+        },
+        "documentType": {
+            "S": "1"
+        },
+        "companyName": {
+            "S": "ELUOILS OUROPSU"
+        },
+        "currentStatus": {
+            "S": "18013"
+        },
+        "addresses": {
+            "L": [
+                {
+                    "M": {
+                        "stateCode": {
+                            "S": "25"
+                        },
+                        "id": {
+                            "S": "b27b18a9-530a-473a-b9e0-0bb1076e37d9"
+                        },
+                        "city": {
+                            "S": "Funza - Cundinamarca"
+                        },
+                        "addressType": {
+                            "S": "Principal"
+                        },
+                        "cityCode": {
+                            "S": "528"
+                        },
+                        "otherAddress": {
+                            "S": "Cra T7T21#4"
+                        }
+                    }
+                },
+                {
+                    "M": {
+                        "stateCode": {
+                            "S": "25"
+                        },
+                        "id": {
+                            "S": "b27b18a9-530a-473a-b9e0-0bb1076e37d9"
+                        },
+                        "city": {
+                            "S": "Funza - Cundinamarca"
+                        },
+                        "cityCode": {
+                            "S": "528"
+                        },
+                        "otherAddress": {
+                            "S": "Cra T7T21#4"
+                        }
+                    }
+                }
+            ]
+        },
+        "personType": {
+            "S": "pn"
+        },
+        "vinculationDate": {
+            "S": "2021-01-06T15:30:06.405000"
+        },
+        "creationDate": {
+            "S": ""
+        },
+        "email": {
+            "S": "facilpasssrobot+9786@gmail.com"
+        },
+        "adminUser": {
+            "S": "110150894-110150894"
+        },
+        "migration": {
+            "BOOL": true
+        },
+        "notifications": {
+            "M": {
+                "notification": {
+                    "S": "facilpasssrobot+9786@gmail.com"
+                },
+                "administrator": {
+                    "S": "facilpasssrobot+9786@gmail.com"
+                },
+                "transaction": {
+                    "S": "facilpasssrobot+9786@gmail.com"
+                },
+                "billing": {
+                    "S": "facilpasssrobot+9786@gmail.com"
+                }
+            }
+        },
+        "role": {
+            "S": "user"
+        },
+        "treeStatus": {
+            "L": [
+                {
+                    "S": "18011_UPRI"
+                },
+                {
+                    "S": "18008_UPRV"
+                },
+                {
+                    "S": "18009_UPCT"
+                },
+                {
+                    "S": "18010_UPAT"
+                }
+            ]
+        },
+        "names": {
+            "S": "ELUOILS"
+        },
+        "segment": {
+            "S": "pn"
+        },
+        "documentNumber": {
+            "S": "10150894"
+        },
+        "id": {
+            "S": "110150894"
+        },
+        "users": {
+            "L": [
+                {
+                    "S": "110150894-110150894"
+                }
+            ]
+        }
+    }
+]

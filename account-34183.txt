@@ -1,0 +1,87 @@
+aws dynamodb query \
+    --table-name fap-movements-detail \
+    --index-name accountId-processDate-index \
+    --key-condition-expression "accountId = :accountId AND processDate BETWEEN :startDate AND :endDate" \
+    --expression-attribute-values '{
+        ":accountId": {"S": "34183"},
+        ":startDate": {"S": "2024-04-21T00:00:00.000"},
+        ":endDate": {"S": "2024-04-21T23:59:59.000"}
+    }'> 34183.json
+
+
+# Backup del Movimiento a eliminar
+aws dynamodb query \
+    --table-name fap-movements-detail \
+    --key-condition-expression "partitionKey = :partitionKey AND sortKey = :sortKey" \
+    --expression-attribute-values '{
+        ":partitionKey": {"S": "3860001371::PASO::2024-04-21"},
+        ":sortKey": {"S": "2024-04-21T16:43:22.878::DB::f0b32ebc-48e3-419d-827a-2687ab284783"}
+    }' > backup_34183_mov.json
+
+
+# Eliminar Movimiento del Cliente
+aws dynamodb delete-item \
+    --table-name fap-movements-detail \
+    --key '{
+        "partitionKey": {"S": "3860001371::PASO::2024-04-21"},
+        "sortKey": {"S": "2024-04-21T16:43:22.878::DB::f0b32ebc-48e3-419d-827a-2687ab284783"}
+    }'
+
+
+aws dynamodb query \
+    --table-name fap-movements-detail \
+    --index-name accountId-processDate-index \
+    --key-condition-expression "accountId = :accountId AND processDate BETWEEN :startDate AND :endDate" \
+    --expression-attribute-values '{
+        ":accountId": {"S": "34183"},
+        ":startDate": {"S": "2024-05-17T00:00:00.000"},
+        ":endDate": {"S": "2024-05-17T23:59:59.000"}
+    }'> 34183-2.json
+
+
+# Backup del Movimiento a eliminar
+aws dynamodb query \
+    --table-name fap-movements-detail \
+    --key-condition-expression "partitionKey = :partitionKey AND sortKey = :sortKey" \
+    --expression-attribute-values '{
+        ":partitionKey": {"S": "3860001371::PASO::2024-05-17"},
+        ":sortKey": {"S": "2024-05-17T12:11:01.291::DB::d5e98d75-9c0e-417c-85d5-f5fe1d120528"}
+    }' > backup_34183_mov_2.json
+
+aws dynamodb delete-item \
+    --table-name fap-movements-detail \
+    --key '{
+        "partitionKey": {"S": "3860001371::PASO::2024-05-17"},
+        "sortKey": {"S": "2024-05-17T12:11:01.291::DB::d5e98d75-9c0e-417c-85d5-f5fe1d120528"}
+    }'
+
+*************************************
+#Stop FAcilpass Operation Commons
+aws lambda list-event-source-mappings --function-name fap-commons-pro-a5-process-toll-transaction --region us-east-2
+aws lambda update-event-source-mapping --uuid 92f71306-6ac6-44a7-b76b-8e8bf13e2129 --no-enabled --region us-east-2
+
+aws dynamodb get-item --table-name fap-accounts --key '{"accountId": {"N": "34183"}}' --region us-east-2 > backup_account_34183.json
+aws dynamodb get-item --table-name fap-accounts --key '{"accountId": {"N": "34183"}}' --region us-east-2 | grep balance -B 2 -A 2
+
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.1.146:/home/ubuntu/scripts/dynamodb/backup_account_34183.json /Users/orlando.rubio/Documents/
+
+# Ajustar Saldo del Cliente
+aws dynamodb update-item \
+    --table-name fap-accounts \
+    --region us-east-2 \
+    --key '{"accountId": {"N": "34183"}}' \
+    --update-expression 'SET #v = :newValue' \
+    --expression-attribute-names '{"#v": "balance"}' \
+    --expression-attribute-values '{":newValue": {"N": "11342100"}}'
+
+aws dynamodb update-item \
+    --table-name fap-accounts \
+    --region us-east-2 \
+    --key '{"accountId": {"N": "34183"}}' \
+    --update-expression 'SET #v = :newValue' \
+    --expression-attribute-names '{"#v": "balance"}' \
+    --expression-attribute-values '{":newValue": {"N": "11181900"}}'
+
+
+#Activate Commons Operation
+aws lambda update-event-source-mapping --uuid 92f71306-6ac6-44a7-b76b-8e8bf13e2129 --enabled --region us-east-2

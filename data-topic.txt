@@ -1,0 +1,71 @@
+aws dynamodb scan \
+   --table-name fap-web-tags-paid \
+   --filter-expression "plate = :partition" \
+   --expression-attribute-values '{":partition":{"S":"EHZ003"}}'
+
+aws dynamodb query \
+    --table-name fap-commons-pro-history-movs-pre \
+    --key-condition-expression "dateId = :partitionKey" \
+    --filter-expression "traceId = :trace" \
+    --expression-attribute-values '{
+        ":partitionKey": {"S": "2024-04-08"},
+        ":trace": {"S": "89f85aa9-137c-4fc3-ba70-1bdcb09cd21a"}    
+    }'
+
+aws dynamodb get-item \
+   --table-name fap-accounts \
+   --key '{"accountId": {"N": "37183"}}'
+
+aws dynamodb get-item \
+   --table-name fap-save-balance-history \
+   --key '{"partitionKey": {"S": "2024-04-08"}, "sortKey": {"S": "PRE::37183"}}'
+
+aws dynamodb get-item \
+   --table-name fap-web-tags-paid \
+   --key '{"id": {"S": "E2003412012BFA000FBE7E59"}}'
+
+aws dynamodb update-item \
+ --table-name fap-web-tags-paid \
+ --key '{"id":{"S":"E2003412012DFA0010DF4C12"}}' \
+ --update-expression 'SET #H = :h' \
+ --expression-attribute-names '{"#H":"categoryVehicle"}' \
+ --expression-attribute-values '{":h":{"N":"5"}}'
+
+ aws dynamodb update-item \
+ --table-name fap-web-tags-paid \
+ --key '{"id":{"S":"CC0000000000000000001946"}}' \
+ --update-expression 'SET #H = :h' \
+ --expression-attribute-names '{"#H":"categoryVehicle"}' \
+ --expression-attribute-values '{":h":{"N":"1"}}'
+
+
+ scp -i ~/.ssh/carroya_instance_key /Users/orlando.rubio/Documents/files-config/fap_user_dev.csv ubuntu@10.155.12.226:/home/ubuntu/scripts/dynamodb/
+
+ scp -i ~/.ssh/carroya_instance_key ubuntu@10.155.12.226:/home/ubuntu/scripts/dynamodb/users_updated_addresses.csv /Users/orlando.rubio/Documents/
+
+
+module "ec2_instance_management" {
+  source                 = "git@github.com:adldigitallabs/devops-mod-aws-ec2-instance?ref=v0.14-0"
+  instance_count         = 1
+  name                   = "${var.stack_id}-ec2-instance-management"
+  ami                    = var.ec2_ami_ubuntu
+  key_name               = aws_key_pair.ec2_ssh_key_mgt_wd.key_name
+  instance_type          = var.ec2_instance_type_management
+  vpc_security_group_ids = [module.sg_ec2_mgt.this_security_group_id]
+  subnet_ids             = [tolist(data.aws_subnet_ids.private_subnets.ids)[1]]
+  root_block_device = [
+    {
+      "delete_on_termination" : true,
+      "device_name" : "/dev/sda1",
+      "encrypted" : false,
+      "volume_size" : 100,
+      "volume_type" : "gp3"
+    }
+  ]
+
+  iam_instance_profile = aws_iam_instance_profile.ec2_management_profile.name
+  tags = merge(
+    local.common_tags,
+    map("Name", "${var.stack_id}-ec2-instance-mgt")
+  )
+}
