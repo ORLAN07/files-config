@@ -69,3 +69,24 @@ module "ec2_instance_management" {
     map("Name", "${var.stack_id}-ec2-instance-mgt")
   )
 }
+
+
+aws dynamodb query \
+    --table-name fap-vehicles \
+    --index-name licensePlate-index \
+    --key-condition-expression "licensePlate = :licensePlate" \
+    --expression-attribute-values '{
+        ":licensePlate": {"S": "“LUL824”"}
+    }'
+
+aws dynamodb scan \
+   --table-name fap-web-tags-paid \
+   --filter-expression "#statusText = :statusVal" \
+   --expression-attribute-names '{"#statusText": "status"}' \
+   --expression-attribute-values '{":statusVal":{"N":"1"}}' \
+   --select "COUNT"
+
+
+aws dynamodb scan \
+   --table-name fap-web-tags-paid \
+   --filter-expression "attribute_not_exists(idAccount)"
