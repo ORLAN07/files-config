@@ -29,6 +29,6 @@ while True:
 
 # Save the scan results to a JSON file
 with open('backup-users-all.json', 'w') as file:
-    json.dump(items, file, indent=4)
+    json.dump(items, file, indent=4, ensure_ascii=False)
 
 print("Scan completed. Data saved to backup.json file.")
