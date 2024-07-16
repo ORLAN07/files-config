@@ -49,3 +49,5 @@ aws lambda update-event-source-mapping --uuid 92f71306-6ac6-44a7-b76b-8e8bf13e21
 
 
 scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.1.146:/home/ubuntu/scripts/dynamodb/scans/fap_users.csv /Users/orlando.rubio/Documents/
+
+aws dynamodb get-item --table-name fap-parameters --key '{"key": {"S": "ENTERPRISE_TERMS_AND_CONDITIONS"}}'
