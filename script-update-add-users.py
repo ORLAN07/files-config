@@ -6,34 +6,32 @@ dynamodb = boto3.resource('dynamodb', region_name='us-east-2')
 
 table = dynamodb.Table('fap-users')
 
-csv_file_path = "fap_users_pro.csv"
+csv_file_path = "fap_users_dev.csv"
 output_csv_path = "users_updated_addresses.csv"
 updated_items = []
 item_field = "Item"
 addresses_field = "addresses"
 
 with open(csv_file_path, 'r', newline='', encoding='utf-8-sig') as csvfile:
-    # Use DictReader with the specified delimiter and skip the first row (headers)
     reader = csv.DictReader(csvfile, delimiter=';', skipinitialspace=True)
 
     for row in reader:
         id=row['personId']
 
-        # query by id
         responseGet = table.get_item(Key={
             'id': id
         })
 
         if item_field in responseGet:
             item = responseGet['Item']
-            #set city name correct
             if addresses_field in item:
                 addresses = item['addresses']
                 for address in addresses:
                     if address['addressType'] == "Principal":
                         address['city'] = row['cityNew']
+                        address['cityCodeDane'] = row['codedane']
                         break
-                #update address city
+                
                 update_expression='SET addresses = :new_addresses'
                 expression_values={':new_addresses': addresses}
 
