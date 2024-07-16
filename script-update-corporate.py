@@ -1,7 +1,6 @@
 import boto3
 import csv
 
-#script users
 dynamodb = boto3.resource('dynamodb', region_name='us-east-2')
 
 table = dynamodb.Table('fap-corporate-info')
@@ -13,27 +12,25 @@ item_field = "Item"
 addresses_field = "addresses"
 
 with open(csv_file_path, 'r', newline='', encoding='utf-8-sig') as csvfile:
-    # Use DictReader with the specified delimiter and skip the first row (headers)
     reader = csv.DictReader(csvfile, delimiter=';', skipinitialspace=True)
 
     for row in reader:
         id=row['corporateNumber']
 
-        # query by id
         responseGet = table.get_item(Key={
             'corporateNumber': id
         })
 
         if item_field in responseGet:
             item = responseGet['Item']
-            #set city name correct
             if addresses_field in item:
                 addresses = item['addresses']
                 for address in addresses:
                     if address['addressType'] == "Principal":
                         address['city'] = row['cityNew']
+                        address['cityCodeDane'] = row['codedane']
                         break
-                #update address city
+
                 update_expression='SET addresses = :new_addresses'
                 expression_values={':new_addresses': addresses}
 
