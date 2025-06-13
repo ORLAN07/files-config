@@ -85,3 +85,35 @@ aws dynamodb update-item \
 
 #Activate Commons Operation
 aws lambda update-event-source-mapping --uuid 92f71306-6ac6-44a7-b76b-8e8bf13e2129 --enabled --region us-east-2
+
+aws lambda list-event-source-mappings --function-name fap-commons-pro-a5-process-toll-transaction --region us-east-2
+aws lambda update-event-source-mapping --uuid 92f71306-6ac6-44a7-b76b-8e8bf13e2129 --no-enabled --region us-east-2
+aws lambda update-event-source-mapping --uuid 92f71306-6ac6-44a7-b76b-8e8bf13e2129 --enabled --region us-east-2
+
+
+aws dynamodb get-item --table-name fap-electronic-invoices-fco --key '{"idTransaction": {"S": "10163_680517303253491832"}}' --region us-east-2
+
+aws dynamodb scan \
+   --table-name fap-electronic-invoices-fco \
+   --select "COUNT"
+
+
+
+
+aws dynamodb get-item --table-name fap-accounts --key '{"accountId": {"N": "156251"}}' --region us-east-2
+
+aws dynamodb query \
+    --table-name fap-users-boss \
+    --key-condition-expression "personId = :partitionKey" \
+    --expression-attribute-values '{
+        ":partitionKey": {"S": "3891300513"}
+    }'
+
+aws dynamodb delete-item \
+    --table-name fap-users-boss \
+    --key '{
+        "personId": {"S": "3891300513"}
+    }'
+
+
+    

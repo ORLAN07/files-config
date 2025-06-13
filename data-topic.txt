@@ -42,6 +42,7 @@ aws dynamodb update-item \
  scp -i ~/.ssh/carroya_instance_key /Users/orlando.rubio/Documents/files-config/fap_user_dev.csv ubuntu@10.155.12.226:/home/ubuntu/scripts/dynamodb/
 
  scp -i ~/.ssh/carroya_instance_key ubuntu@10.155.12.226:/home/ubuntu/scripts/dynamodb/users_updated_addresses.csv /Users/orlando.rubio/Documents/
+ scp -i ~/.ssh/carroya_instance_key ubuntu@10.155.13.137:/home/ubuntu/dynamodb/users/users-status.xlsx /Users/orlando.rubio/Documents/
 
 
 module "ec2_instance_management" {
@@ -69,3 +70,174 @@ module "ec2_instance_management" {
     map("Name", "${var.stack_id}-ec2-instance-mgt")
   )
 }
+
+
+aws dynamodb query \
+    --table-name fap-vehicles \
+    --index-name licensePlate-index \
+    --key-condition-expression "licensePlate = :licensePlate" \
+    --expression-attribute-values '{
+        ":licensePlate": {"S": "“LUL824”"}
+    }'
+
+aws dynamodb scan \
+   --table-name fap-web-tags-paid \
+   --filter-expression "#statusText = :statusVal" \
+   --expression-attribute-names '{"#statusText": "status"}' \
+   --expression-attribute-values '{":statusVal":{"N":"1"}}' \
+   --select "COUNT"
+
+
+aws dynamodb scan \
+   --table-name fap-web-tags-paid \
+   --filter-expression "attribute_not_exists(idAccount)"
+
+
+   aws dynamodb put-item \
+    --table-name fap-commons-pro-a5-generated-lists \
+    --item '{
+        "list_name": {"S": "10037_20240718_00003P"},
+        "date": {"S": "2024-07-18T00:05:26.964"},
+        "lastListName": {"S": "10037_20240718_00002N"},
+        "list_type": {"S": "P"},
+        "numRecords": {"N": "1"},
+        "s3Path": {"S": "s3://fap-commons-pro-a5-generated-lists-storage/closed_P_list/10037_20240718_00003P"},
+        "status": {"S": "PENDING_CLOSE"}
+    }'
+
+aws dynamodb update-item \
+ --table-name fap-commons-pro-a5-generated-lists \
+ --key '{"list_name":{"S":"10037_20240718_00003P"}}' \
+ --update-expression 'SET #H = :h' \
+ --expression-attribute-names '{"#H":"date"}' \
+ --expression-attribute-values '{":h":{"S":"2024-07-18T00:07:26.964"}}'
+
+
+aws dynamodb update-item \
+ --table-name fap-commons-pro-a5-generated-lists \
+ --key '{"list_name":{"S":"10037_20240718_00004P"}}' \
+ --update-expression 'SET #H = :h' \
+ --expression-attribute-names '{"#H":"lastListName"}' \
+ --expression-attribute-values '{":h":{"S":"10037_20240718_00003P"}}'
+
+
+aws dynamodb get-item \
+   --table-name fap-commons-pro-a5-generated-lists \
+   --key '{"list_name": {"S": "10037_20240720_00004T"}}'
+
+aws dynamodb update-item \
+ --table-name fap-commons-pro-a5-generated-lists \
+ --key '{"list_name":{"S":"10037_20240719_00004T"}}' \
+ --update-expression 'SET #H = :h' \
+ --expression-attribute-names '{"#H":"date"}' \
+ --expression-attribute-values '{":h":{"S":"2024-07-19T00:09:41.432"}}' 
+
+ aws dynamodb update-item \
+ --table-name fap-commons-pro-a5-generated-lists \
+ --key '{"list_name":{"S":"10037_20240720_00004T"}}' \
+ --update-expression 'SET #H = :h' \
+ --expression-attribute-names '{"#H":"date"}' \
+ --expression-attribute-values '{":h":{"S":"2024-07-20T00:09:44.006"}}' 
+
+ aws dynamodb get-item \
+   --table-name fap-commons-pro-a5-generated-lists \
+   --key '{"list_name": {"S": "10037_20240721_00002T"}}'
+
+aws dynamodb update-item \
+ --table-name fap-commons-pro-a5-generated-lists \
+ --key '{"list_name":{"S":"10037_20240721_00002T"}}' \
+ --update-expression 'SET #H = :h' \
+ --expression-attribute-names '{"#H":"date"}' \
+ --expression-attribute-values '{":h":{"S":"2024-07-21T00:08:58.498"}}' 
+
+  aws dynamodb get-item \
+   --table-name fap-commons-pro-a5-generated-lists \
+   --key '{"list_name": {"S": "10037_20240722_00004T"}}'
+
+aws dynamodb update-item \
+ --table-name fap-commons-pro-a5-generated-lists \
+ --key '{"list_name":{"S":"10037_20240829_00002N"}}' \
+ --update-expression 'SET #H = :h' \
+ --expression-attribute-names '{"#H":"date"}' \
+ --expression-attribute-values '{":h":{"S":"2024-07-21T00:09:52.770"}}'
+
+
+aws dynamodb query \
+    --table-name fap-accounts \
+    --index-name nure-index \
+    --key-condition-expression "nure = :nure" \
+    --expression-attribute-values '{
+        ":nure": {"S": "1128398594"}
+    }'
+
+aws dynamodb scan \
+   --table-name fap-recurring-recharge \
+   --filter-expression "#statusText = :statusVal" \
+   --expression-attribute-names '{"#statusText": "accountId"}' \
+   --expression-attribute-values '{":statusVal":{"S":"112839"}}'
+
+
+aws dynamodb scan \
+    --table-name fap-accounts \
+    --filter-expression "nure = :n" \
+    --expression-attribute-values '{":n":{"Null":"true"}}'
+
+aws dynamodb scan \
+    --table-name fap-accounts \
+    --filter-expression "attribute_type(nure, :nullType)" \
+    --expression-attribute-values '{":nullType": {"S": "NULL"}}'
+
+
+aws dynamodb get-item \
+   --table-name fap-commons-pro-tdt-package-details \
+   --key '{"id": {"S": "E2C06892200076023C911DE4"}}'
+
+
+aws dynamodb update-item \
+ --table-name fap-commons-pro-a5-generated-lists \
+ --key '{"list_name":{"S":"10037_20240829_00002N"}}' \
+ --update-expression 'SET #H = :h' \
+ --expression-attribute-names '{"#H":"date"}' \
+ --expression-attribute-values '{":h":{"S":"2024-08-29T00:07:52.770"}}'
+
+ aws lambda list-event-source-mappings --function-name fap-commons-stg-proxy-balance --region us-east-2
+ aws lambda update-event-source-mapping --uuid 92f71306-6ac6-44a7-b76b-8e8bf13e2129 --no-enabled --region us-east-2
+aws lambda update-event-source-mapping --uuid 92f71306-6ac6-44a7-b76b-8e8bf13e2129 --enabled --region us-east-2
+
+
+aws dynamodb get-item \
+   --table-name fap-save-balance-history \
+   --key '{"partitionKey": {"S": "E2C06892200076023C911DE4"}, "sortKey": {"S": "PRE::15096"}}'
+
+   aws ssm put-parameter \
+    --name "/fap-toll-pro/fpass-toll-lambda-clients/services-tags-api-key" \
+    --value "FIioHZBP7W8IcBx6hhRgtacKjr22fY623myTBoMR" \
+    --type "SecureString" \
+    --overwrite \
+    --region us-east-2
+
+
+aws ssm get-parameter --name "/fap-toll-pro/fpass-toll-lambda-clients/services-tags-api-key" --with-decryption
+
+aws secretsmanager get-secret-value --secret-id services-tags-api-key
+
+aws secretsmanager list-secrets --max-items 10
+
+aws dynamodb put-item \
+    --table-name fap-accounts-vip \
+    --item '{
+        "accountId": {"N": "36375"},
+        "amount": {"N": "20000000"},
+        "debtAmount": {"N": "-75000000"},
+        "debtDays": {"N": "3"},
+        "expirationDate": {"S": "2025-05-09T15:48:55"},
+        "nit": {"S": "900394217"},
+        "statusVip": {"N": "2"}
+    }'
+
+aws dynamodb update-item \
+ --table-name fap-accounts-vip \
+ --key '{"accountId":{"N":"36375"}}' \
+ --update-expression 'SET #H = :h' \
+ --expression-attribute-names '{"#H":"amount"}' \
+ --expression-attribute-values '{":h":{"N":"20000000"}}'

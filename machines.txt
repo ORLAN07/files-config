@@ -4,5 +4,50 @@ stg: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.155.17.227
 Prod: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.156.5.207
 Máquinas FP Toll Powers:
 dev: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.155.12.226
-stg: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.155.17.244
+dev: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.155.13.137
+stg: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.155.17.253
 Prod: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.156.1.146
+Prod: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.156.2.140
+
+
+aws dynamodb query \
+    --table-name fap-commons-pro-list-info \
+    --key-condition-expression "id = :id AND sortKey BETWEEN :startSortKey AND :endSortKey" \
+    --expression-attribute-values '{
+        ":id": {"S": "2025-06-10"},
+        ":startSortKey": {"S": "2025-06-10T18:30:00.000000"},
+        ":endSortKey": {"S": "2025-06-10T18:35:00.000000"}
+    }' \
+    --select "COUNT"
+
+aws dynamodb query \
+    --table-name fap-commons-pro-list-info \
+    --key-condition-expression "id = :id AND sortKey BETWEEN :startSortKey AND :endSortKey" \
+    --expression-attribute-values '{
+        ":id": {"S": "2025-06-10"},
+        ":startSortKey": {"S": "2025-06-10T17:55:00.000000"},
+        ":endSortKey": {"S": "2025-06-10T18:00:00.000000"}
+    }' \
+    --select "COUNT"
+
+    aws dynamodb query \
+    --table-name fap-commons-pro-list-info \
+    --key-condition-expression "id = :id AND sortKey BETWEEN :startSortKey AND :endSortKey" \
+    --filter-expression "clientNumber = :accountNumber" \
+    --expression-attribute-values '{
+        ":id": {"S": "2025-06-10"},
+        ":startSortKey": {"S": "2025-06-10T10:57:22.166166"},
+        ":endSortKey": {"S": "2025-06-10T11:02:22.166166"},
+        ":accountNumber": {"S": "157837"}
+    }' \
+    --select "COUNT"
+
+
+{
+ "keyParameter": "PARTIAL_LIST_LAST_EXECUTION",
+ "items": [
+  {
+   "dateTime": "2025-06-10T15:50:00.000000"
+  }
+ ]
+}

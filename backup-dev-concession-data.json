@@ -1,0 +1,492 @@
+{
+    "keyParameter": "CONCESSION_DATA",
+    "items": [
+     {
+      "bankStationCode": "10",
+      "collectionAgreement": "80025676961",
+      "concessionAgreementId": "83000602119",
+      "contractNumber": "0015312501",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario7878781",
+      "operatorCode": "1010",
+      "stationCode": "73",
+      "stationId": "11",
+      "stationName": "RIO BOGOTA 4",
+      "status": "ACTIVE",
+      "uuid": "b254672e-3c14-4df1-88ee-f4d48a50d7e6"
+     },
+     {
+      "collectionAgreement": "80025676961",
+      "concessionAgreementId": "8300060211009991",
+      "contractNumber": "0015312501",
+      "diclaimer": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario7878781",
+      "operatorCode": "10101",
+      "stationCode": "741",
+      "stationId": "11",
+      "stationName": "CORZO92",
+      "status": "ACTIVE",
+      "uuid": "d2f3049d-4253-4dec-8023-fbc1759ee4fb"
+     },
+     {
+      "concessionAgreementId": "9008480641",
+      "operatorCode": "1011",
+      "stationCode": "64",
+      "stationName": "PUENTE QUETAME",
+      "status": "ACTIVE",
+      "uuid": "030cd1be-fe1c-4253-85c2-f612439a452e"
+     },
+     {
+      "concessionAgreementId": "9008480641",
+      "operatorCode": "1011",
+      "stationCode": "63",
+      "stationName": "BOQUERON II",
+      "status": "ACTIVE",
+      "uuid": "e9323517-9225-4b94-bfc7-a9ecfc26cda9"
+     },
+     {
+      "concessionAgreementId": "9008480641",
+      "operatorCode": "1011",
+      "stationCode": "62",
+      "stationName": "BOQUERON I",
+      "status": "ACTIVE",
+      "uuid": "32b3ae56-e016-42ee-8f65-8591599f49dd"
+     },
+     {
+      "concessionAgreementId": "9008480641",
+      "operatorCode": "1011",
+      "stationCode": "76",
+      "stationName": "NARANJAL",
+      "status": "ACTIVE",
+      "uuid": "27aa3f8d-d020-49c4-be40-c36b558b0f14"
+     },
+     {
+      "concessionAgreementId": "8300365561",
+      "operatorCode": "1012",
+      "stationCode": "69",
+      "stationName": "JALISCO",
+      "status": "ACTIVE",
+      "uuid": "3af854eb-f3f5-4f6f-b152-c671448b9a27"
+     },
+     {
+      "concessionAgreementId": "8903279961",
+      "operatorCode": "1013",
+      "stationCode": "67",
+      "stationName": "BETANIA",
+      "status": "ACTIVE",
+      "uuid": "29608937-4034-4d4f-91e2-ec4d2bf522f4"
+     },
+     {
+      "concessionAgreementId": "8903279961",
+      "operatorCode": "1013",
+      "stationCode": "68",
+      "stationName": "URIBE",
+      "status": "ACTIVE",
+      "uuid": "ffb2be18-f8da-4be4-b794-3bb8a7873da3"
+     },
+     {
+      "concessionAgreementId": "9008622151",
+      "operatorCode": "1014",
+      "stationCode": "43",
+      "stationName": "SAN PEDRO",
+      "status": "ACTIVE",
+      "uuid": "021ff801-1c04-49f0-ae78-53eadb75e0f9"
+     },
+     {
+      "concessionAgreementId": "9008622151",
+      "operatorCode": "1014",
+      "stationCode": "42",
+      "stationName": "VERACRUZ",
+      "status": "ACTIVE",
+      "uuid": "22c5e784-272d-4969-8750-9a3783ee86d3"
+     },
+     {
+      "concessionAgreementId": "9008622151",
+      "operatorCode": "1014",
+      "stationCode": "41",
+      "stationName": "PUENTE AMARILLO",
+      "status": "ACTIVE",
+      "uuid": "e9ec262d-6982-4391-9fd2-05f80701ed42"
+     },
+     {
+      "concessionAgreementId": "9007616571",
+      "operatorCode": "1015",
+      "stationCode": "80",
+      "stationName": "PATIOS",
+      "status": "ACTIVE",
+      "uuid": "f45e9537-fd96-41e3-9037-3a1abe0d0322"
+     },
+     {
+      "concessionAgreementId": "9007616571",
+      "operatorCode": "1015",
+      "stationCode": "78",
+      "stationName": "SOPO",
+      "status": "ACTIVE",
+      "uuid": "a373b20f-8feb-414d-9081-9a154d64d86f"
+     },
+     {
+      "concessionAgreementId": "9007616571",
+      "operatorCode": "1015",
+      "stationCode": "79",
+      "stationName": "LA CABANA",
+      "status": "ACTIVE",
+      "uuid": "730b50b2-d42a-49e6-8b82-59bead2efa0d"
+     },
+     {
+      "concessionAgreementId": "9007633571",
+      "operatorCode": "10041",
+      "stationCode": "17088000",
+      "stationName": "ACAPULCO",
+      "status": "ACTIVE",
+      "uuid": "ce60f34e-2e87-4874-b81c-05afcb554098"
+     },
+     {
+      "concessionAgreementId": "9007633572",
+      "operatorCode": "10041",
+      "stationCode": "66594002",
+      "stationName": "IRRA",
+      "status": "ACTIVE",
+      "uuid": "9ce9fcc1-d1e5-4ae6-859d-c7ed07bd6d70"
+     },
+     {
+      "concessionAgreementId": "8110050501",
+      "operatorCode": "10045",
+      "stationCode": "COP",
+      "stationName": "COPACABANA",
+      "status": "ACTIVE",
+      "uuid": "7940d03d-5a46-4a7a-b4eb-103dcbf30f86"
+     },
+     {
+      "collectionAgreement": "8110050502",
+      "concessionAgreementId": "8110050502",
+      "contractNumber": "8110050502",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario7878781",
+      "operatorCode": "10045",
+      "stationCode": "PAL",
+      "stationName": "PALMAS",
+      "status": "ACTIVE",
+      "uuid": "8de409e3-c4c8-496e-a0a7-32821cc9035f"
+     },
+     {
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "9008480641",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10055",
+      "stationCode": "TAOC",
+      "stationName": "INDRA",
+      "status": "ACTIVE",
+      "uuid": "8beb3c3a-bea0-4d3c-85e8-c5c647c1a94b"
+     },
+     {
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "8002352807",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10055",
+      "stationCode": "TEST1",
+      "stationName": "INDRA",
+      "status": "ACTIVE",
+      "uuid": "8beb3c3a-bea0-4d3c-85e8-c5c647c1a94b"
+     },
+     {
+      "concessionAgreementId": "8300060211",
+      "operatorCode": "1011",
+      "stationCode": "73",
+      "stationName": "LOBO-GUERRERO-1",
+      "status": "ACTIVE",
+      "uuid": "8cabef54-89be-4a2f-b787-588ef4869757"
+     },
+     {
+      "concessionAgreementId": "8300060211",
+      "operatorCode": "1011",
+      "stationCode": "74",
+      "stationName": "INVIAS",
+      "status": "ACTIVE",
+      "uuid": "4b1e369b-a396-4626-93e5-2b1e91c9ce6a"
+     },
+     {
+      "concessionAgreementId": "8300060211",
+      "operatorCode": "1011",
+      "stationCode": "74",
+      "stationName": "PALMIRA",
+      "status": "ACTIVE",
+      "uuid": "64cf5a1c-6543-4919-9a96-5f8ba03482a4"
+     },
+     {
+      "concessionAgreementId": "8300060211",
+      "operatorCode": "1010",
+      "stationCode": "73",
+      "stationName": "LOBO-GUERRERO-2",
+      "status": "INACTIVE",
+      "uuid": "14c2a91b-58ea-400c-a5e0-4b63ff9dc91f"
+     },
+     {
+      "concessionAgreementId": "8300060208",
+      "operatorCode": "1210",
+      "stationCode": "74",
+      "stationName": "LOBO-GUERRERO-3",
+      "status": "ACTIVE",
+      "uuid": "ab83325d-42a6-42dc-80b1-36bae580760f"
+     },
+     {
+      "collectionAgreement": "73",
+      "concessionAgreementId": "77777777",
+      "contractNumber": "73",
+      "discleimerConcesion": "73",
+      "operatorCode": "1010",
+      "stationCode": "73",
+      "stationId": "73",
+      "stationName": "RIO BOGOTA1",
+      "status": "ACTIVE",
+      "uuid": "c7162d05-ebb3-4cfe-b136-082d54fce110"
+     },
+     {
+      "collectionAgreement": "51",
+      "concessionAgreementId": "51",
+      "contractNumber": "64",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario3",
+      "operatorCode": "932",
+      "stationCode": "977",
+      "stationId": "218",
+      "stationName": "5",
+      "status": "ACTIVE",
+      "uuid": "15836954-e2d4-430e-9a96-0427ec19f3ac"
+     },
+     {
+      "collectionAgreement": "800256769611",
+      "concessionAgreementId": "77777777",
+      "contractNumber": "001531250",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario",
+      "operatorCode": "1010",
+      "stationCode": "73",
+      "stationId": "1",
+      "stationName": "RIO BOGOTA23",
+      "status": "ACTIVE",
+      "uuid": "8fee8279-8d2d-4d3c-be84-34aaff2b5593"
+     },
+     {
+      "collectionAgreement": "1100052328",
+      "concessionAgreementId": "77777777",
+      "contractNumber": "88332299",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario1",
+      "operatorCode": "1010",
+      "stationCode": "73",
+      "stationId": "10",
+      "stationName": "DUITAMA",
+      "status": "ACTIVE",
+      "uuid": "e2e45698-ec82-4d90-974f-a7e323a970f2"
+     },
+     {
+      "collectionAgreement": "800259212",
+      "concessionAgreementId": "11111",
+      "contractNumber": "1111",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario",
+      "operatorCode": "1413",
+      "stationCode": "78",
+      "stationId": "1",
+      "stationName": "RIO CHITICUY",
+      "status": "ACTIVE",
+      "uuid": "ebd93591-0746-46ec-8c28-71db16828730"
+     },
+     {
+      "collectionAgreement": "80025676961",
+      "concessionAgreementId": "8300060211009991",
+      "contractNumber": "0015312501",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario7878781",
+      "operatorCode": "10101",
+      "stationCode": "741",
+      "stationId": "11",
+      "stationName": "CORZO929",
+      "status": "ACTIVE",
+      "uuid": "47af729e-d4c2-4169-a2da-d6efacf233e5"
+     },
+     {
+      "collectionAgreement": "98798789",
+      "concessionAgreementId": "89879",
+      "contractNumber": "7868767",
+      "discleimerConcesion": "8769uihkjhkjhkjhkhkjhk",
+      "operatorCode": "76978",
+      "stationCode": "97897897897",
+      "stationId": "8979879898987",
+      "stationName": "kjhkjhkh",
+      "status": "ACTIVE",
+      "uuid": "9f37009f-1614-47d2-b33c-67580f439121"
+     },
+     {
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "8300060211",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10019",
+      "stationCode": "25286002",
+      "stationName": "RIO BOGOTA",
+      "status": "ACTIVE",
+      "uuid": "f4664863-d149-4d85-8e78-aeaeb5C65723"
+     },
+     {
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "8600060211",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10165",
+      "stationCode": "SIBERIA",
+      "stationName": "SIBERIA",
+      "status": "ACTIVE",
+      "uuid": "f4664863-d149-4d85-8e78-aeaeb5C65723"
+     },
+     {
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "8600060211",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10000",
+      "stationCode": "A22",
+      "stationName": "MINISTERIO",
+      "status": "ACTIVE",
+      "uuid": "F538AD99-1C66-482B-9A80-97420D8B2018"
+     },
+     {
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "8600060211",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10000",
+      "stationCode": "A23",
+      "stationName": "MINISTERIO",
+      "status": "ACTIVE",
+      "uuid": "DDB4A6BA-7980-40D6-A1AB-0023ADC951E5"
+     },
+     {
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "8600060211",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10000",
+      "stationCode": "A24",
+      "stationName": "MINISTERIO",
+      "status": "ACTIVE",
+      "uuid": "2B24FCE5-F1CE-4F53-8718-BC099030FB95"
+     },
+     {
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "8600060211",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10000",
+      "stationCode": "A25",
+      "stationName": "MINISTERIO",
+      "status": "ACTIVE",
+      "uuid": "296179AA-A834-432C-831E-5004A14A8662"
+     },
+     {
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "8600060211",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10000",
+      "stationCode": "A26",
+      "stationName": "MINISTERIO",
+      "status": "ACTIVE",
+      "uuid": "F38A1C5B-F0A3-4133-8FAF-A63E37EF997F"
+     },
+     {
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "8600060211",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10019",
+      "stationCode": "300",
+      "stationName": "CCFC",
+      "status": "ACTIVE",
+      "uuid": "F38A1C5B-F0A3-4133-8FAF-A63E37EF997F"
+     },
+     {
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "8600060211",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10057",
+      "stationCode": "300234",
+      "stationName": "Alto Magdalena",
+      "status": "ACTIVE",
+      "uuid": "45B6E7E0-C211-47E8-990F-31AC33A387B5"
+     },
+     {
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "9008480641",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10055",
+      "stationCode": "TAOC",
+      "stationId": "11",
+      "stationName": "INDRA3",
+      "status": "ACTIVE",
+      "uuid": "74afcfb8-ccec-423e-a5ed-931ac051c1dd"
+     },
+     {
+      "bankStationCode": "1",
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "9008480641",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10055",
+      "stationCode": "TAOC",
+      "stationId": "11",
+      "stationName": "INDRA5",
+      "status": "ACTIVE",
+      "uuid": "dea5b46a-0135-4a45-ab7c-5fd1cc5f0437"
+     },
+     {
+      "bankStationCode": "15",
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "9008480641",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10055",
+      "stationCode": "TAOC",
+      "stationId": "11",
+      "stationName": "INDRA14",
+      "status": "ACTIVE",
+      "uuid": "dce3f5bc-77fc-424b-8b9d-72ae0f588d4d"
+     },
+     {
+      "bankStationCode": "1",
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "9008480641",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10055",
+      "stationCode": "TAOC",
+      "stationId": "11",
+      "stationName": "ANJR19",
+      "status": "ACTIVE",
+      "uuid": "097219f6-fb5c-4c2e-8a02-53dc224669c3"
+     },
+     {
+      "bankStationCode": "15",
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "9008480641",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10055",
+      "stationCode": "TAOC",
+      "stationId": "11",
+      "stationName": "AAA33",
+      "status": "ACTIVE",
+      "uuid": "371ab2d7-70b3-4109-81fb-30c1e078d4c8"
+     },
+     {
+      "bankStationCode": "1",
+      "collectionAgreement": "354cvbdfg",
+      "concessionAgreementId": "99999999",
+      "contractNumber": "23434535",
+      "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario en nombre de PA Perimetral Oriental de Bogotá por concepto de pago de peaje en el corredor Víal Perimetral del Oriente de Cundinamarca",
+      "operatorCode": "10055",
+      "stationCode": "TAOC",
+      "stationId": "11",
+      "stationName": "INDRA2",
+      "status": "INACTIVE",
+      "uuid": "a136855f-bee2-46ee-81cf-06ceb2358127"
+     }
+    ]
+   }

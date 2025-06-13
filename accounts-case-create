@@ -1,0 +1,15 @@
+aws lambda invoke \
+  --function-name fap-toll-pro-create-account \
+  --payload '{
+      "accountData": {
+        "statusAccount": "Creada",
+        "contractNumber": "104128",
+        "personId": "3901805267",
+        "contractPath": "contracts/juridicPerson/3901805267/Contrato_3901805267_104128_3.0.0.pdf"
+      },
+      "ctype": "PJ",
+      "transactionUser": "3901805267-11073325064",
+      "ipAddress": "181.48.223.30"
+    }' \
+  --region us-east-2 \
+  response.json

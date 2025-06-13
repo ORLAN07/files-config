@@ -1,0 +1,1 @@
+scp -i ~/.ssh/carroya_instance_key /Users/orlando.rubio/Documents/files-config/update-fap-accounts-balance/get-accounts-not-category.py ubuntu@10.155.12.226:/home/ubuntu/scripts/dynamodb/

@@ -1,0 +1,1 @@
+aws events disable-rule --name fap-commons-stg-five-minutes-a5 --region us-east-2

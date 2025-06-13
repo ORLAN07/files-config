@@ -1,0 +1,36 @@
+aws dynamodb query \
+    --table-name fap-movements-detail \
+    --index-name accountId-processDate-index \
+    --key-condition-expression "accountId = :accountId AND processDate BETWEEN :startDate AND :endDate" \
+    --expression-attribute-values '{
+        ":accountId": {"S": "120811"},
+        ":startDate": {"S": "2024-07-24T00:00:00.000"},
+        ":endDate": {"S": "2024-07-24T23:59:59.000"}
+    }'
+
+
+aws dynamodb get-item --table-name fap-commons-pro-history-movs-pre --key '{"dateId": {"S": "2024-07-24"}, "dateTimeRange": {"S": "2023-11-02T10:08.11.123"}}' --region us-east-2 > get.json
+
+aws dynamodb query \
+    --table-name fap-commons-pro-history-movs-pre \
+    --index-name account_id-date_id-index \
+    --key-condition-expression "accountId = :accountId AND dateId = :dateSort" \
+    --expression-attribute-values '{
+        ":accountId": {"S": "120811"},
+        ":dateSort": {"S": "2024-07-24"}
+    }'
+
+scp -i ~/.ssh/carroya_instance_key /Users/orlando.rubio/Documents/ ubuntu@10.156.1.146:/home/ubuntu/scripts/dynamodb/backup_account_34183.json 
+
+
+aws dynamodb query \
+    --table-name fap-movements-detail \
+    --index-name accountId-processDate-index \
+    --key-condition-expression "accountId = :accountId AND processDate BETWEEN :startDate AND :endDate" \
+    --filter-expression "dateTransaction = :dateT" \
+    --expression-attribute-values '{
+        ":accountId": {"S": "18687"},
+        ":startDate": {"S": "2024-07-24T00:00:00.000"},
+        ":endDate": {"S": "2024-07-24T23:59:59.000"},
+        ":dateT": {"S": "2024-03-19T12:20.11.123"}
+    }'

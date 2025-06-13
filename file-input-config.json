@@ -1,0 +1,1804 @@
+{
+    "items": [
+        {
+            "Cod. Operador": "10171",
+            "statecode": "17088000",
+            "Statename": "ACAPULCO",
+            "stateid": "3",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900763357",
+            "nombre concesion": "PACIFICO 3"
+        },
+        {
+            "Cod. Operador": "10171",
+            "statecode": "66594002",
+            "Statename": "IRRA",
+            "stateid": "4",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900763357",
+            "nombre concesion": "PACIFICO 3"
+        },
+        {
+            "Cod. Operador": "10045",
+            "statecode": "COP",
+            "Statename": "COPACABANA",
+            "stateid": "5",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "811005050",
+            "nombre concesion": "DEVIMED"
+        },
+        {
+            "Cod. Operador": "10045",
+            "statecode": "PAL",
+            "Statename": "PALMAS",
+            "stateid": "6",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "811005050",
+            "nombre concesion": "DEVIMED"
+        },
+        {
+            "Cod. Operador": "10158",
+            "statecode": "16843776",
+            "Statename": "PIPIRAL",
+            "stateid": "7",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "900848064",
+            "nombre concesion": "COVIANDINA"
+        },
+        {
+            "Cod. Operador": "10158",
+            "statecode": "16843520",
+            "Statename": "NARANJAL",
+            "stateid": "8",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "900848064",
+            "nombre concesion": "COVIANDINA"
+        },
+        {
+            "Cod. Operador": "10158",
+            "statecode": "16843008",
+            "Statename": "BOQUERON",
+            "stateid": "9",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "900848064",
+            "nombre concesion": "COVIANDINA"
+        },
+        {
+            "Cod. Operador": "10158",
+            "statecode": "16843264",
+            "Statename": "BOQUERON2",
+            "stateid": "10",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "900848064",
+            "nombre concesion": "COVIANDINA"
+        },
+        {
+            "Cod. Operador": "10151",
+            "statecode": "SOPO",
+            "Statename": "SOPO ",
+            "stateid": "11",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900761657",
+            "nombre concesion": "PERIMETRAL ORIENTAL POB"
+        },
+        {
+            "Cod. Operador": "10151",
+            "statecode": "LA CABAÃ‘A",
+            "Statename": "LA CABAÃ‘A",
+            "stateid": "12",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900761657",
+            "nombre concesion": "PERIMETRAL ORIENTAL POB"
+        },
+        {
+            "Cod. Operador": "10151",
+            "statecode": "LOS PATIOS",
+            "Statename": "LOS PATIOS",
+            "stateid": "13",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900761657",
+            "nombre concesion": "PERIMETRAL ORIENTAL POB"
+        },
+        {
+            "Cod. Operador": "10101",
+            "statecode": "AND",
+            "Statename": "ANDES",
+            "stateid": "14",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901039225",
+            "nombre concesion": "ACCENORTE"
+        },
+        {
+            "Cod. Operador": "10101",
+            "statecode": "FUS",
+            "Statename": "FUSCA",
+            "stateid": "15",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901039225",
+            "nombre concesion": "ACCENORTE"
+        },
+        {
+            "Cod. Operador": "10101",
+            "statecode": "USA",
+            "Statename": "UNISABANA",
+            "stateid": "16",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901039225",
+            "nombre concesion": "ACCENORTE"
+        },
+        {
+            "Cod. Operador": "10173",
+            "statecode": "16843008",
+            "Statename": "PUENTE AMARILLO",
+            "stateid": "17",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "900862215",
+            "nombre concesion": "COVIORIENTE"
+        },
+        {
+            "Cod. Operador": "10173",
+            "statecode": "16843264",
+            "Statename": "VERACRUZ",
+            "stateid": "18",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "900862215",
+            "nombre concesion": "COVIORIENTE"
+        },
+        {
+            "Cod. Operador": "10173",
+            "statecode": "16843520",
+            "Statename": "SAN PEDRO",
+            "stateid": "19",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "900862215",
+            "nombre concesion": "COVIORIENTE"
+        },
+        {
+            "Cod. Operador": "10046",
+            "statecode": "SBR",
+            "Statename": "SIBERIA",
+            "stateid": "21",
+            "Estado": "ACTIVE",
+            "agreementid": "800235280",
+            "collectionAgreement": "800235280",
+            "nombre concesion": "SABANA SIBERIA-TENJO"
+        },
+        {
+            "Cod. Operador": "10046",
+            "statecode": "CQR",
+            "Statename": "CAIQUERO",
+            "stateid": "22",
+            "Estado": "ACTIVE",
+            "agreementid": "800235280",
+            "collectionAgreement": "800235280",
+            "nombre concesion": "SABANA SIBERIA-TENJO"
+        },
+        {
+            "Cod. Operador": "10154",
+            "statecode": "BRISAS",
+            "Statename": "BRISAS",
+            "stateid": "23",
+            "Estado": "ACTIVE",
+            "agreementid": "830055897",
+            "collectionAgreement": "900745219",
+            "nombre concesion": "ALTO MAGDALENA"
+        },
+        {
+            "Cod. Operador": "10154",
+            "statecode": "CAMBAO",
+            "Statename": "CAMBAO",
+            "stateid": "24",
+            "Estado": "ACTIVE",
+            "agreementid": "830055897",
+            "collectionAgreement": "900745219",
+            "nombre concesion": "ALTO MAGDALENA"
+        },
+        {
+            "Cod. Operador": "10154",
+            "statecode": "GUATAQUI",
+            "Statename": "GUATAQUI",
+            "stateid": "25",
+            "Estado": "ACTIVE",
+            "agreementid": "830055897",
+            "collectionAgreement": "900745219",
+            "nombre concesion": "ALTO MAGDALENA"
+        },
+        {
+            "Cod. Operador": "10172",
+            "statecode": "73",
+            "Statename": "RIO BOGOTA1",
+            "stateid": "34",
+            "Estado": "INACTIVE",
+            "agreementid": "900373092",
+            "collectionAgreement": "900373092",
+            "nombre concesion": "YUMA CONCESIONARIA S A - EN REORGANIZACION"
+        },
+        {
+            "Cod. Operador": "10048",
+            "statecode": "GLP",
+            "Statename": "GALAPA",
+            "stateid": "39",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900763355",
+            "nombre concesion": "RUTA COSTERA"
+        },
+        {
+            "Cod. Operador": "10048",
+            "statecode": "JMN",
+            "Statename": "JUAN MINA",
+            "stateid": "40",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900763355",
+            "nombre concesion": "RUTA COSTERA"
+        },
+        {
+            "Cod. Operador": "10171",
+            "statecode": "17616000",
+            "Statename": "GUAICO",
+            "stateid": "41",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900763357",
+            "nombre concesion": "PACIFICO 3"
+        },
+        {
+            "Cod. Operador": "10148",
+            "statecode": "16843008",
+            "Statename": "TEBAIDA",
+            "stateid": "42",
+            "Estado": "ACTIVE",
+            "agreementid": "901209021",
+            "collectionAgreement": "901209021",
+            "nombre concesion": "DEVISAB S.A.S"
+        },
+        {
+            "Cod. Operador": "10148",
+            "statecode": "16843264",
+            "Statename": "MONDOÃ‘EDO",
+            "stateid": "43",
+            "Estado": "ACTIVE",
+            "agreementid": "901209021",
+            "collectionAgreement": "901209021",
+            "nombre concesion": "DEVISAB S.A.S"
+        },
+        {
+            "Cod. Operador": "10148",
+            "statecode": "16843520",
+            "Statename": "RAMAL A SOACHA",
+            "stateid": "44",
+            "Estado": "ACTIVE",
+            "agreementid": "901209021",
+            "collectionAgreement": "901209021",
+            "nombre concesion": "DEVISAB S.A.S"
+        },
+        {
+            "Cod. Operador": "10201",
+            "statecode": "PIN",
+            "Statename": "PINTADA",
+            "stateid": "47",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900740893",
+            "nombre concesion": "PACIFICO DOS-LA PINTADA"
+        },
+        {
+            "Cod. Operador": "10201",
+            "statecode": "PRI",
+            "Statename": "PRIMAVERA",
+            "stateid": "48",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900740893",
+            "nombre concesion": "PACIFICO DOS-LA PINTADA"
+        },
+        {
+            "Cod. Operador": "10148",
+            "statecode": "16843776",
+            "Statename": "SANPEDRO",
+            "stateid": "49",
+            "Estado": "ACTIVE",
+            "agreementid": "901209021",
+            "collectionAgreement": "901209021",
+            "nombre concesion": "DEVISAB S.A.S"
+        },
+        {
+            "Cod. Operador": "10148",
+            "statecode": "16844032",
+            "Statename": "PUBENZA",
+            "stateid": "50",
+            "Estado": "ACTIVE",
+            "agreementid": "901209021",
+            "collectionAgreement": "901209021",
+            "nombre concesion": "DEVISAB S.A.S"
+        },
+        {
+            "Cod. Operador": "10161",
+            "statecode": "ALV",
+            "Statename": "ALVARADO",
+            "stateid": "51",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900864150",
+            "nombre concesion": "ALTERNATIVAS VIALES"
+        },
+        {
+            "Cod. Operador": "10161",
+            "statecode": "HON",
+            "Statename": "HONDA",
+            "stateid": "52",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900864150",
+            "nombre concesion": "ALTERNATIVAS VIALES"
+        },
+        {
+            "Cod. Operador": "10161",
+            "statecode": "ARM",
+            "Statename": "ARMERO",
+            "stateid": "53",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900864150",
+            "nombre concesion": "ALTERNATIVAS VIALES"
+        },
+        {
+            "Cod. Operador": "10176",
+            "statecode": "27",
+            "Statename": "ABURRA",
+            "stateid": "54",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900869678",
+            "nombre concesion": "DLLO VIA AL MAR SAS-DEVIMAR"
+        },
+        {
+            "Cod. Operador": "10170",
+            "statecode": "73210001",
+            "Statename": "COCORA",
+            "stateid": "55",
+            "Estado": "ACTIVE",
+            "agreementid": "830053700",
+            "collectionAgreement": "900816750",
+            "nombre concesion": "APP GICA"
+        },
+        {
+            "Cod. Operador": "10170",
+            "statecode": "73001001",
+            "Statename": "GUALANDAY",
+            "stateid": "56",
+            "Estado": "ACTIVE",
+            "agreementid": "830053700",
+            "collectionAgreement": "900816750",
+            "nombre concesion": "APP GICA"
+        },
+        {
+            "Cod. Operador": "10170",
+            "statecode": "73268001",
+            "Statename": "CHICORAL",
+            "stateid": "57",
+            "Estado": "ACTIVE",
+            "agreementid": "830053700",
+            "collectionAgreement": "900816750",
+            "nombre concesion": "APP GICA"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "25899001",
+            "Statename": "CASA BLANCA",
+            "stateid": "58",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "68077001",
+            "Statename": "SABOYA",
+            "stateid": "59",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "68679001",
+            "Statename": "CURITY",
+            "stateid": "60",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "68547001",
+            "Statename": "CUROS",
+            "stateid": "61",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "25320001",
+            "Statename": "BICENTENARIO ",
+            "stateid": "62",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "15051001",
+            "Statename": "ARCABUCO ",
+            "stateid": "63",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "52240001",
+            "Statename": "CANO ",
+            "stateid": "64",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "23660001",
+            "Statename": "CARIMAGUA ",
+            "stateid": "65",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "19392001",
+            "Statename": "EL BORDO ",
+            "stateid": "66",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "15759001",
+            "Statename": "EL CRUCERO ",
+            "stateid": "67",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "76823001",
+            "Statename": "EL TORO ",
+            "stateid": "68",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "5038001",
+            "Statename": "LOS LLANOS ",
+            "stateid": "69",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "68255001",
+            "Statename": "RIO BLANCO ",
+            "stateid": "70",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "76890001",
+            "Statename": "RIO FRIO ",
+            "stateid": "71",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "15638001",
+            "Statename": "SACHICA ",
+            "stateid": "72",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "66318001",
+            "Statename": "SAN CLEMENTE ",
+            "stateid": "73",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "5790001",
+            "Statename": "TARAZA ",
+            "stateid": "74",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "63130001",
+            "Statename": "AMERICAS ",
+            "stateid": "75",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "73124001",
+            "Statename": "BERMELLON ",
+            "stateid": "76",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10163",
+            "statecode": "67000001",
+            "Statename": "BETANIA ",
+            "stateid": "77",
+            "Estado": "ACTIVE",
+            "agreementid": "890327996",
+            "collectionAgreement": "890327996",
+            "nombre concesion": "PROYECTOS DE INFRAESTRUCTURA S.A.S"
+        },
+        {
+            "Cod. Operador": "10163",
+            "statecode": "68000001",
+            "Statename": "URIBE ",
+            "stateid": "78",
+            "Estado": "ACTIVE",
+            "agreementid": "890327996",
+            "collectionAgreement": "890327996",
+            "nombre concesion": "PROYECTOS DE INFRAESTRUCTURA S.A.S"
+        },
+        {
+            "Cod. Operador": "10173",
+            "statecode": "16843776",
+            "Statename": "TACUYA",
+            "stateid": "79",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "900862215",
+            "nombre concesion": "COVIORIENTE"
+        },
+        {
+            "Cod. Operador": "10167",
+            "statecode": "23350001",
+            "Statename": "LA APARTADA",
+            "stateid": "81",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900894996",
+            "nombre concesion": "RUTA AL MAR SAS"
+        },
+        {
+            "Cod. Operador": "10167",
+            "statecode": "23555001",
+            "Statename": "LOS MANGUITOS",
+            "stateid": "82",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900894996",
+            "nombre concesion": "RUTA AL MAR SAS"
+        },
+        {
+            "Cod. Operador": "10167",
+            "statecode": "23001003",
+            "Statename": "PURGATORI",
+            "stateid": "83",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900894996",
+            "nombre concesion": "RUTA AL MAR SAS"
+        },
+        {
+            "Cod. Operador": "10167",
+            "statecode": "23001004",
+            "Statename": "LOS CEDROS",
+            "stateid": "84",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900894996",
+            "nombre concesion": "RUTA AL MAR SAS"
+        },
+        {
+            "Cod. Operador": "10167",
+            "statecode": "23300001",
+            "Statename": "MATA DE CAÃ‘A",
+            "stateid": "85",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900894996",
+            "nombre concesion": "RUTA AL MAR SAS"
+        },
+        {
+            "Cod. Operador": "10167",
+            "statecode": "70820001",
+            "Statename": "CAIMANERA",
+            "stateid": "86",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900894996",
+            "nombre concesion": "RUTA AL MAR SAS"
+        },
+        {
+            "Cod. Operador": "10164",
+            "statecode": "25286002",
+            "Statename": "RIO BOGOTA",
+            "stateid": "87",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "830006021",
+            "nombre concesion": "CCFC"
+        },
+        {
+            "Cod. Operador": "10164",
+            "statecode": "25286003",
+            "Statename": "CORZO",
+            "stateid": "88",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "830006021",
+            "nombre concesion": "CCFC"
+        },
+        {
+            "Cod. Operador": "10155",
+            "statecode": "10",
+            "Statename": "CHUSACA ",
+            "stateid": "89",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901009478",
+            "nombre concesion": "VIA 40"
+        },
+        {
+            "Cod. Operador": "10155",
+            "statecode": "20",
+            "Statename": "CHINAUTA",
+            "stateid": "90",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901009478",
+            "nombre concesion": "VIA 40"
+        },
+        {
+            "Cod. Operador": "10159",
+            "statecode": "ZNF",
+            "Statename": "ZONA FRANCA",
+            "stateid": "91",
+            "Estado": "ACTIVE",
+            "agreementid": "830054076",
+            "collectionAgreement": "900402838",
+            "nombre concesion": "CONVIAS"
+        },
+        {
+            "Cod. Operador": "10159",
+            "statecode": "BRQ",
+            "Statename": "BARRANQUILLITA",
+            "stateid": "92",
+            "Estado": "ACTIVE",
+            "agreementid": "830054076",
+            "collectionAgreement": "900402838",
+            "nombre concesion": "CONVIAS"
+        },
+        {
+            "Cod. Operador": "10165",
+            "statecode": "PUENTE_LAUREANO",
+            "Statename": "PUENTE_LAUREANO",
+            "stateid": "93",
+            "Estado": "ACTIVE",
+            "agreementid": "900118838",
+            "collectionAgreement": "900118838",
+            "nombre concesion": "RUTA DEL SOL II S.A.S"
+        },
+        {
+            "Cod. Operador": "10165",
+            "statecode": "TASAJERA",
+            "Statename": "TASAJERA",
+            "stateid": "94",
+            "Estado": "ACTIVE",
+            "agreementid": "900118838",
+            "collectionAgreement": "900118838",
+            "nombre concesion": "RUTA DEL SOL II S.A.S"
+        },
+        {
+            "Cod. Operador": "10172",
+            "statecode": "21029",
+            "Statename": "TUCURINCA",
+            "stateid": "95",
+            "Estado": "ACTIVE",
+            "agreementid": "900373092",
+            "collectionAgreement": "900373092",
+            "nombre concesion": "YUMA CONCESIONARIA S A - EN REORGANIZACION"
+        },
+        {
+            "Cod. Operador": "10172",
+            "statecode": "13009",
+            "Statename": "PUENTE PLATO",
+            "stateid": "96",
+            "Estado": "ACTIVE",
+            "agreementid": "900373092",
+            "collectionAgreement": "900373092",
+            "nombre concesion": "YUMA CONCESIONARIA S A - EN REORGANIZACION"
+        },
+        {
+            "Cod. Operador": "10172",
+            "statecode": "12037",
+            "Statename": "EL COPEY",
+            "stateid": "97",
+            "Estado": "ACTIVE",
+            "agreementid": "900373092",
+            "collectionAgreement": "900373092",
+            "nombre concesion": "YUMA CONCESIONARIA S A - EN REORGANIZACION"
+        },
+        {
+            "Cod. Operador": "10175",
+            "statecode": "28",
+            "Statename": "ACACIOS",
+            "stateid": "98",
+            "Estado": "ACTIVE",
+            "agreementid": "830054076",
+            "collectionAgreement": "901082545",
+            "nombre concesion": "PAMPLONITA"
+        },
+        {
+            "Cod. Operador": "10175",
+            "statecode": "27",
+            "Statename": "PAMPLONITA",
+            "stateid": "99",
+            "Estado": "ACTIVE",
+            "agreementid": "830054076",
+            "collectionAgreement": "901082545",
+            "nombre concesion": "PAMPLONITA"
+        },
+        {
+            "Cod. Operador": "10181",
+            "statecode": "16843008",
+            "Statename": "JALISCO",
+            "stateid": "100",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "830036556",
+            "nombre concesion": "PANAMERICANA"
+        },
+        {
+            "Cod. Operador": "10181",
+            "statecode": "16843264",
+            "Statename": "GUAYABAL",
+            "stateid": "101",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "830036556",
+            "nombre concesion": "PANAMERICANA"
+        },
+        {
+            "Cod. Operador": "10166",
+            "statecode": "ROZO",
+            "Statename": "ROZO",
+            "stateid": "102",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901489697",
+            "nombre concesion": "CONCESIONARIA RUTAS DEL VALLE"
+        },
+        {
+            "Cod. Operador": "10166",
+            "statecode": "CENCAR",
+            "Statename": "CENCAR",
+            "stateid": "103",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901489697",
+            "nombre concesion": "CONCESIONARIA RUTAS DEL VALLE"
+        },
+        {
+            "Cod. Operador": "10166",
+            "statecode": "PASO_LA_TORRE",
+            "Statename": "PASO LA TORRE",
+            "stateid": "104",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901489697",
+            "nombre concesion": "CONCESIONARIA RUTAS DEL VALLE"
+        },
+        {
+            "Cod. Operador": "10166",
+            "statecode": "CERRITO",
+            "Statename": "CERRITO",
+            "stateid": "105",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901489697",
+            "nombre concesion": "CONCESIONARIA RUTAS DEL VALLE"
+        },
+        {
+            "Cod. Operador": "10166",
+            "statecode": "MEDIA_CANOA",
+            "Statename": "MEDIA CANOA",
+            "stateid": "106",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901489697",
+            "nombre concesion": "CONCESIONARIA RUTAS DEL VALLE"
+        },
+        {
+            "Cod. Operador": "10166",
+            "statecode": "ESTAMBUL",
+            "Statename": "ESTAMBUL",
+            "stateid": "107",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901489697",
+            "nombre concesion": "CONCESIONARIA RUTAS DEL VALLE"
+        },
+        {
+            "Cod. Operador": "10166",
+            "statecode": "CIAT",
+            "Statename": "CIAT",
+            "stateid": "108",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901489697",
+            "nombre concesion": "CONCESIONARIA RUTAS DEL VALLE"
+        },
+        {
+            "Cod. Operador": "10166",
+            "statecode": "VILLA_RICA",
+            "Statename": "VILLA RICA",
+            "stateid": "109",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901489697",
+            "nombre concesion": "CONCESIONARIA RUTAS DEL VALLE"
+        },
+        {
+            "Cod. Operador": "10160",
+            "statecode": "PSM",
+            "Statename": "SEMINARIO",
+            "stateid": "110",
+            "Estado": "ACTIVE",
+            "agreementid": "830055897",
+            "collectionAgreement": "811012172",
+            "nombre concesion": "TUNEL DE ORIENTE"
+        },
+        {
+            "Cod. Operador": "10160",
+            "statecode": "PSJ",
+            "Statename": "SAJONIA",
+            "stateid": "111",
+            "Estado": "ACTIVE",
+            "agreementid": "830055897",
+            "collectionAgreement": "811012172",
+            "nombre concesion": "TUNEL DE ORIENTE"
+        },
+        {
+            "Cod. Operador": "10160",
+            "statecode": "PVP",
+            "Statename": "VARIANT.P",
+            "stateid": "112",
+            "Estado": "ACTIVE",
+            "agreementid": "830055897",
+            "collectionAgreement": "811012172",
+            "nombre concesion": "TUNEL DE ORIENTE"
+        },
+        {
+            "Cod. Operador": "10160",
+            "statecode": "PSE",
+            "Statename": "SANTA ELENA",
+            "stateid": "113",
+            "Estado": "ACTIVE",
+            "agreementid": "830055897",
+            "collectionAgreement": "811012172",
+            "nombre concesion": "TUNEL DE ORIENTE"
+        },
+        {
+            "Cod. Operador": "10151",
+            "statecode": "LA_CABAÃ‘A",
+            "Statename": "LA_CABAÃ‘A",
+            "stateid": "114",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900761657",
+            "nombre concesion": "PERIMETRAL ORIENTAL POB"
+        },
+        {
+            "Cod. Operador": "10151",
+            "statecode": "LOS_PATIOS",
+            "Statename": "LOS_PATIOS",
+            "stateid": "115",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900761657",
+            "nombre concesion": "PERIMETRAL ORIENTAL POB"
+        },
+        {
+            "Cod. Operador": "10178",
+            "statecode": "24",
+            "Statename": "CONTADERO",
+            "stateid": "116",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900880846",
+            "nombre concesion": "UNION DEL SUR"
+        },
+        {
+            "Cod. Operador": "10178",
+            "statecode": "26",
+            "Statename": "EL_PLACER",
+            "stateid": "117",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900880846",
+            "nombre concesion": "UNION DEL SUR"
+        },
+        {
+            "Cod. Operador": "10178",
+            "statecode": "25",
+            "Statename": "CONTROL",
+            "stateid": "118",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900880846",
+            "nombre concesion": "UNION DEL SUR"
+        },
+        {
+            "Cod. Operador": "10180",
+            "statecode": "5895001",
+            "Statename": "ZARAGOZA",
+            "stateid": "119",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900793991",
+            "nombre concesion": "AUTOPISTAS NORDESTE"
+        },
+        {
+            "Cod. Operador": "10177",
+            "statecode": "20",
+            "Statename": "EL CARMEN",
+            "stateid": "120",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900858096",
+            "nombre concesion": "MONTES DE MARIA"
+        },
+        {
+            "Cod. Operador": "10177",
+            "statecode": "23",
+            "Statename": "CALAMAR",
+            "stateid": "121",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900858096",
+            "nombre concesion": "MONTES DE MARIA"
+        },
+        {
+            "Cod. Operador": "10183",
+            "statecode": "ALTAMIRA",
+            "Statename": "ALTAMIRA",
+            "stateid": "122",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901482899",
+            "nombre concesion": "RUTA AL SUR"
+        },
+        {
+            "Cod. Operador": "10183",
+            "statecode": "LOS_CAUCHOS",
+            "Statename": "LOS_CAUCHOS",
+            "stateid": "123",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901482899",
+            "nombre concesion": "RUTA AL SUR"
+        },
+        {
+            "Cod. Operador": "10168",
+            "statecode": "25426001",
+            "Statename": "MACHETA",
+            "stateid": "124",
+            "Estado": "ACTIVE",
+            "agreementid": "901161505",
+            "collectionAgreement": "901161505",
+            "nombre concesion": "CONCESION TRANSVERSAL DEL SISGA S.A.S"
+        },
+        {
+            "Cod. Operador": "10048",
+            "statecode": "MCO",
+            "Statename": "MARAHUACO",
+            "stateid": "125",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900763355",
+            "nombre concesion": "RUTA COSTERA"
+        },
+        {
+            "Cod. Operador": "10048",
+            "statecode": "PTO",
+            "Statename": "PUERTO COLOMBIA",
+            "stateid": "126",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900763355",
+            "nombre concesion": "RUTA COSTERA"
+        },
+        {
+            "Cod. Operador": "10172",
+            "statecode": "12038",
+            "Statename": "LA LOMA",
+            "stateid": "127",
+            "Estado": "ACTIVE",
+            "agreementid": "900373092",
+            "collectionAgreement": "900373092",
+            "nombre concesion": "YUMA CONCESIONARIA S A - EN REORGANIZACION"
+        },
+        {
+            "Cod. Operador": "10172",
+            "statecode": "12081",
+            "Statename": "VALENCIA",
+            "stateid": "128",
+            "Estado": "ACTIVE",
+            "agreementid": "900373092",
+            "collectionAgreement": "900373092",
+            "nombre concesion": "YUMA CONCESIONARIA S A - EN REORGANIZACION"
+        },
+        {
+            "Cod. Operador": "10172",
+            "statecode": "12091",
+            "Statename": "EL DIFICIL",
+            "stateid": "129",
+            "Estado": "ACTIVE",
+            "agreementid": "900373092",
+            "collectionAgreement": "900373092",
+            "nombre concesion": "YUMA CONCESIONARIA S A - EN REORGANIZACION"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "2075001",
+            "Statename": "SAN DIEGO",
+            "stateid": "130",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10059",
+            "statecode": "16843264",
+            "Statename": "LA LIZAMA",
+            "stateid": "131",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900871368",
+            "nombre concesion": "RUTA DEL CACAO"
+        },
+        {
+            "Cod. Operador": "10059",
+            "statecode": "16844032",
+            "Statename": "LA PAZ",
+            "stateid": "132",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900871368",
+            "nombre concesion": "RUTA DEL CACAO"
+        },
+        {
+            "Cod. Operador": "10182",
+            "statecode": "LIB",
+            "Statename": "LA LIBERTAD",
+            "stateid": "133",
+            "Estado": "ACTIVE",
+            "agreementid": "830054076",
+            "collectionAgreement": "900843297",
+            "nombre concesion": "CONCESION VIAL DE LOS LLANOS"
+        },
+        {
+            "Cod. Operador": "10182",
+            "statecode": "OCO",
+            "Statename": "OCOA",
+            "stateid": "134",
+            "Estado": "ACTIVE",
+            "agreementid": "830054076",
+            "collectionAgreement": "900843297",
+            "nombre concesion": "CONCESION VIAL DE LOS LLANOS"
+        },
+        {
+            "Cod. Operador": "201",
+            "statecode": "26",
+            "Statename": "Parqueadero Atlantis",
+            "stateid": "202",
+            "Estado": "ACTIVE",
+            "agreementid": "8001408878",
+            "collectionAgreement": "8001408878",
+            "nombre concesion": "Parqueadero"
+        },
+        {
+            "Cod. Operador": "10156",
+            "statecode": "TPC",
+            "Statename": "TRAPICHE",
+            "stateid": "203",
+            "Estado": "ACTIVE",
+            "agreementid": "830055897",
+            "collectionAgreement": "900920562",
+            "nombre concesion": "VÍAS DEL NUS"
+        },
+        {
+            "Cod. Operador": "10156",
+            "statecode": "CBD",
+            "Statename": "CABILDO",
+            "stateid": "204",
+            "Estado": "ACTIVE",
+            "agreementid": "830055897",
+            "collectionAgreement": "900920562",
+            "nombre concesion": "VÍAS DEL NUS"
+        },
+        {
+            "Cod. Operador": "10156",
+            "statecode": "PDQ",
+            "Statename": "PANDEQUESO",
+            "stateid": "205",
+            "Estado": "ACTIVE",
+            "agreementid": "830055897",
+            "collectionAgreement": "900920562",
+            "nombre concesion": "VÍAS DEL NUS"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "5697001",
+            "Statename": "COCORNA",
+            "stateid": "206",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "5591001",
+            "Statename": "PUERTO TRIUNFO",
+            "stateid": "207",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "20011001",
+            "Statename": "PLATANAL",
+            "stateid": "208",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "201",
+            "statecode": "100",
+            "Statename": "Parqueadero Prueba",
+            "stateid": "209",
+            "Estado": "ACTIVE",
+            "agreementid": "8001408878",
+            "collectionAgreement": "8001408878",
+            "nombre concesion": "Parqueadero"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "44650001",
+            "Statename": "SAN JUAN",
+            "stateid": "210",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10179",
+            "statecode": "88",
+            "Statename": "LEBRIJA",
+            "stateid": "211",
+            "Estado": "ACTIVE",
+            "agreementid": "800185008",
+            "collectionAgreement": "800185008",
+            "nombre concesion": "THOMAS INSTRUMENTS S A"
+        },
+        {
+            "Cod. Operador": "10157",
+            "statecode": "FLA",
+            "Statename": "FLANDES",
+            "stateid": "212",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900903279",
+            "nombre concesion": "AUTOVÍA NEIVA"
+        },
+        {
+            "Cod. Operador": "10157",
+            "statecode": "PTA",
+            "Statename": "PATA",
+            "stateid": "213",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900903279",
+            "nombre concesion": "AUTOVÍA NEIVA"
+        },
+        {
+            "Cod. Operador": "10182",
+            "statecode": "CAS",
+            "Statename": "CASETABLA",
+            "stateid": "220",
+            "Estado": "ACTIVE",
+            "agreementid": "830054076",
+            "collectionAgreement": "900843297",
+            "nombre concesion": "CONCESION VIAL DE LOS LLANOS"
+        },
+        {
+            "Cod. Operador": "10182",
+            "statecode": "YUC",
+            "Statename": "YUCAO",
+            "stateid": "221",
+            "Estado": "ACTIVE",
+            "agreementid": "830054076",
+            "collectionAgreement": "900843297",
+            "nombre concesion": "CONCESION VIAL DE LOS LLANOS"
+        },
+        {
+            "Cod. Operador": "201",
+            "statecode": "29",
+            "Statename": "C.C. NUESTRO BOGOTA",
+            "stateid": "222",
+            "Estado": "ACTIVE",
+            "agreementid": "8001408878",
+            "collectionAgreement": "8001408878",
+            "nombre concesion": "Parqueadero"
+        },
+        {
+            "Cod. Operador": "201",
+            "statecode": "1",
+            "Statename": "C.C. PLAZA CENTRAL",
+            "stateid": "223",
+            "Estado": "ACTIVE",
+            "agreementid": "8001408878",
+            "collectionAgreement": "8001408878",
+            "nombre concesion": "Parqueadero"
+        },
+        {
+            "Cod. Operador": "10162",
+            "statecode": "BERR",
+            "Statename": "PUERTO BERRIO",
+            "stateid": "224",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900788548",
+            "nombre concesion": "RÍO MAGDALENA"
+        },
+        {
+            "Cod. Operador": "10185",
+            "statecode": "MUT",
+            "Statename": "PEAJE MUTATA",
+            "stateid": "225",
+            "Estado": "ACTIVE",
+            "agreementid": "830054076",
+            "collectionAgreement": "900902591",
+            "nombre concesion": "AUTOPISTAS DE URABA"
+        },
+        {
+            "Cod. Operador": "201",
+            "statecode": "23",
+            "Statename": "Parqueadero Salitre Plaza",
+            "stateid": "227",
+            "Estado": "ACTIVE",
+            "agreementid": "8001408878",
+            "collectionAgreement": "8001408878",
+            "nombre concesion": "Parqueadero"
+        },
+        {
+            "Cod. Operador": "10188",
+            "statecode": "16843008",
+            "Statename": "COROZAL",
+            "stateid": "228",
+            "Estado": "ACTIVE",
+            "agreementid": "830054060",
+            "collectionAgreement": "830025490",
+            "nombre concesion": "Autopista del Café"
+        },
+        {
+            "Cod. Operador": "10188",
+            "statecode": "16843264",
+            "Statename": "CIRCASIA",
+            "stateid": "229",
+            "Estado": "ACTIVE",
+            "agreementid": "830054060",
+            "collectionAgreement": "830025490",
+            "nombre concesion": "Autopista del Café"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "25572001",
+            "Statename": "EL KORAN",
+            "stateid": "230",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10188",
+            "statecode": "16843776",
+            "Statename": "TARAPACA II",
+            "stateid": "231",
+            "Estado": "ACTIVE",
+            "agreementid": "830054060",
+            "collectionAgreement": "830025490",
+            "nombre concesion": "Autopista del Café"
+        },
+        {
+            "Cod. Operador": "10188",
+            "statecode": "16844032",
+            "Statename": "SAN BERNARDO",
+            "stateid": "232",
+            "Estado": "ACTIVE",
+            "agreementid": "830054060",
+            "collectionAgreement": "830025490",
+            "nombre concesion": "Autopista del Café"
+        },
+        {
+            "Cod. Operador": "10188",
+            "statecode": "16844544",
+            "Statename": "SANTAGUEDA",
+            "stateid": "233",
+            "Estado": "ACTIVE",
+            "agreementid": "830054060",
+            "collectionAgreement": "830025490",
+            "nombre concesion": "Autopista del Café"
+        },
+        {
+            "Cod. Operador": "10187",
+            "statecode": "23001011",
+            "Statename": "Garzones 1",
+            "stateid": "234",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900135168",
+            "nombre concesion": "AUTOPISTAS DE LA SABANA"
+        },
+        {
+            "Cod. Operador": "201",
+            "statecode": "30",
+            "Statename": "La EstaciÃ³n",
+            "stateid": "235",
+            "Estado": "ACTIVE",
+            "agreementid": "8001408878",
+            "collectionAgreement": "8001408878",
+            "nombre concesion": "Parqueadero"
+        },
+        {
+            "Cod. Operador": "201",
+            "statecode": "39",
+            "Statename": "Primavera",
+            "stateid": "236",
+            "Estado": "ACTIVE",
+            "agreementid": "8001408878",
+            "collectionAgreement": "8001408878",
+            "nombre concesion": "Parqueadero"
+        },
+        {
+            "Cod. Operador": "201",
+            "statecode": "87",
+            "Statename": "Multicentro",
+            "stateid": "237",
+            "Estado": "ACTIVE",
+            "agreementid": "8001408878",
+            "collectionAgreement": "8001408878",
+            "nombre concesion": "Parqueadero"
+        },
+        {
+            "Cod. Operador": "201",
+            "statecode": "88",
+            "Statename": "Unicentro ",
+            "stateid": "238",
+            "Estado": "ACTIVE",
+            "agreementid": "8001408878",
+            "collectionAgreement": "8001408878",
+            "nombre concesion": "Parqueadero"
+        },
+        {
+            "Cod. Operador": "201",
+            "statecode": "90",
+            "Statename": "Acqua Power Center",
+            "stateid": "239",
+            "Estado": "ACTIVE",
+            "agreementid": "8001408878",
+            "collectionAgreement": "8001408878",
+            "nombre concesion": "Parqueadero"
+        },
+        {
+            "Cod. Operador": "201",
+            "statecode": "28",
+            "Statename": "El Retiro",
+            "stateid": "240",
+            "Estado": "ACTIVE",
+            "agreementid": "8001408878",
+            "collectionAgreement": "8001408878",
+            "nombre concesion": "Parqueadero"
+        },
+        {
+            "Cod. Operador": "10189",
+            "statecode": "5800",
+            "Statename": "ROBLE",
+            "stateid": "241",
+            "Estado": "ACTIVE",
+            "agreementid": "901371452",
+            "collectionAgreement": "901371481",
+            "nombre concesion": "BTS Autovia"
+        },
+        {
+            "Cod. Operador": "10189",
+            "statecode": "5900",
+            "Statename": "ALBARRACIN",
+            "stateid": "242",
+            "Estado": "ACTIVE",
+            "agreementid": "901371452",
+            "collectionAgreement": "901371481",
+            "nombre concesion": "BTS Autovia"
+        },
+        {
+            "Cod. Operador": "10189",
+            "statecode": "6000",
+            "Statename": "TUTA",
+            "stateid": "243",
+            "Estado": "ACTIVE",
+            "agreementid": "901371452",
+            "collectionAgreement": "901371481",
+            "nombre concesion": "BTS Autovia"
+        },
+        {
+            "Cod. Operador": "10191",
+            "statecode": "1100",
+            "Statename": "AMAGA",
+            "stateid": "244",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "900744773",
+            "nombre concesion": "COVIPACIFICO"
+        },
+        {
+            "Cod. Operador": "10189",
+            "statecode": "4000",
+            "Statename": "LA PUNTA",
+            "stateid": "245",
+            "Estado": "ACTIVE",
+            "agreementid": "901371452",
+            "collectionAgreement": "901371481",
+            "nombre concesion": "BTS Autovia"
+        },
+        {
+            "Cod. Operador": "10188",
+            "statecode": "16844288",
+            "Statename": "PAVAS",
+            "stateid": "246",
+            "Estado": "ACTIVE",
+            "agreementid": "830054060",
+            "collectionAgreement": "830025490",
+            "nombre concesion": "Autopista del Café"
+        },
+        {
+            "Cod. Operador": "10187",
+            "statecode": "23001012",
+            "Statename": "Garzones 2",
+            "stateid": "247",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900135168",
+            "nombre concesion": "AUTOPISTAS DE LA SABANA"
+        },
+        {
+            "Cod. Operador": "10187",
+            "statecode": "70823001",
+            "Statename": "La Esperanza",
+            "stateid": "248",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900135168",
+            "nombre concesion": "AUTOPISTAS DE LA SABANA"
+        },
+        {
+            "Cod. Operador": "10187",
+            "statecode": "70473004",
+            "Statename": "Las Flores",
+            "stateid": "249",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900135168",
+            "nombre concesion": "AUTOPISTAS DE LA SABANA"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "54001001",
+            "Statename": "LA PARADA",
+            "stateid": "250",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10157",
+            "statecode": "NVA",
+            "Statename": "NEIVA",
+            "stateid": "252",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900903279",
+            "nombre concesion": "AUTOVÍA NEIVA"
+        },
+        {
+            "Cod. Operador": "202",
+            "statecode": "1001",
+            "Statename": "Wash-N-GO - Av.Pradilla",
+            "stateid": "253",
+            "Estado": "ACTIVE",
+            "agreementid": "8300936198",
+            "collectionAgreement": "8300936198",
+            "nombre concesion": "Lavado y polinchado"
+        },
+        {
+            "Cod. Operador": "202",
+            "statecode": "1002",
+            "Statename": "Wash-N-GO - C.C Viva",
+            "stateid": "254",
+            "Estado": "ACTIVE",
+            "agreementid": "8300936198",
+            "collectionAgreement": "8300936198",
+            "nombre concesion": "Lavado y polinchado"
+        },
+        {
+            "Cod. Operador": "202",
+            "statecode": "1003",
+            "Statename": "Wash-N-GO - Calle 134",
+            "stateid": "255",
+            "Estado": "ACTIVE",
+            "agreementid": "8300936198",
+            "collectionAgreement": "8300936198",
+            "nombre concesion": "Lavado y polinchado"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "25286002",
+            "Statename": "RIO BOGOTA ",
+            "stateid": "256",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "25286003",
+            "Statename": "CORZO ",
+            "stateid": "257",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10186",
+            "statecode": "EST",
+            "Statename": "PEAJE DE GALAPA",
+            "stateid": "258",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901515242",
+            "nombre concesion": "AUTOPISTA DEL CARIBE SAS"
+        },
+        {
+            "Cod. Operador": "10190",
+            "statecode": "76233001",
+            "Statename": "Loboguerrero",
+            "stateid": "259",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "901621257",
+            "nombre concesion": "UNION VIAL CAMINO DEL PACIFICO"
+        },
+        {
+            "Cod. Operador": "10048",
+            "statecode": "PAP",
+            "Statename": "PAPIROS",
+            "stateid": "260",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900763355",
+            "nombre concesion": "RUTA COSTERA"
+        },
+        {
+            "Cod. Operador": "10185",
+            "statecode": "FUEMIA",
+            "Statename": "PEAJE FUEMIA",
+            "stateid": "261",
+            "Estado": "ACTIVE",
+            "agreementid": "830054076",
+            "collectionAgreement": "900902591",
+            "nombre concesion": "AUTOPISTAS DE URABA"
+        },
+        {
+            "Cod. Operador": "10180",
+            "statecode": "5604001",
+            "Statename": "FRAGUA",
+            "stateid": "262",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900793991",
+            "nombre concesion": "AUTOPISTAS NORDESTE"
+        },
+        {
+            "Cod. Operador": "10169",
+            "statecode": "2040001",
+            "Statename": "RINCON HONDO",
+            "stateid": "300",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "901533793",
+            "nombre concesion": "UT PEAJES NACIONALES"
+        },
+        {
+            "Cod. Operador": "10182",
+            "statecode": "IRA",
+            "Statename": "IRACA",
+            "stateid": "301",
+            "Estado": "ACTIVE",
+            "agreementid": "830054076",
+            "collectionAgreement": "900843297",
+            "nombre concesion": "CONCESION VIAL DE LOS LLANOS"
+        },
+        {
+            "Cod. Operador": "10156",
+            "statecode": "CIS",
+            "Statename": "CISNEROS",
+            "stateid": "302",
+            "Estado": "ACTIVE",
+            "agreementid": "830055897",
+            "collectionAgreement": "900920562",
+            "nombre concesion": "VÍAS DEL NUS"
+        },
+        {
+            "Cod. Operador": "10188",
+            "statecode": "16843520",
+            "Statename": "TARAPACA I",
+            "stateid": "303",
+            "Estado": "ACTIVE",
+            "agreementid": "830054060",
+            "collectionAgreement": "830025490",
+            "nombre concesion": "Autopista del Café"
+        },
+        {
+            "Cod. Operador": "202",
+            "statecode": "1004",
+            "Statename": "Wash-N-GO - Ã‰xito Colina",
+            "stateid": "304",
+            "Estado": "ACTIVE",
+            "agreementid": "8300936198",
+            "collectionAgreement": "8300936198",
+            "nombre concesion": "Lavado y polinchado"
+        },
+        {
+            "Cod. Operador": "10156",
+            "statecode": "PDQ-prueba",
+            "Statename": "PAN DE QUESO",
+            "stateid": "305",
+            "Estado": "ACTIVE",
+            "agreementid": "830055897",
+            "collectionAgreement": "900920562",
+            "nombre concesion": "VÍAS DEL NUS"
+        },
+        {
+            "Cod. Operador": "10171",
+            "statecode": "17777001",
+            "Statename": "SUPIA",
+            "stateid": "306",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900763357",
+            "nombre concesion": "PACIFICO 3"
+        },
+        {
+            "Cod. Operador": "10168",
+            "statecode": "15667001",
+            "Statename": "SAN LUIS DE GACENO",
+            "stateid": "307",
+            "Estado": "ACTIVE",
+            "agreementid": "901161505",
+            "collectionAgreement": "901161505",
+            "nombre concesion": "CONCESION TRANSVERSAL DEL SISGA S.A.S"
+        },
+        {
+            "Cod. Operador": "10173",
+            "statecode": "16844032",
+            "Statename": "YOPAL",
+            "stateid": "308",
+            "Estado": "ACTIVE",
+            "agreementid": "800256769",
+            "collectionAgreement": "900862215",
+            "nombre concesion": "COVIORIENTE"
+        },
+        {
+            "Cod. Operador": "10167",
+            "statecode": "23678001",
+            "Statename": "SAN CARLOS",
+            "stateid": "309",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900894996",
+            "nombre concesion": "RUTA AL MAR SAS"
+        },
+        {
+            "Cod. Operador": "10167",
+            "statecode": "23570001",
+            "Statename": "SAN ONOFRE",
+            "stateid": "310",
+            "Estado": "ACTIVE",
+            "agreementid": "830054539",
+            "collectionAgreement": "900894996",
+            "nombre concesion": "RUTA AL MAR SAS"
+        }
+    ]
+}

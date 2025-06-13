@@ -1,0 +1,40 @@
+{
+    "accountId": "60354",
+    "agreement": "8002352807",
+    "amount": 10300,
+    "notifyDate": "2024-08-13T17:25:42.773Z",
+    "dateTransaction": "2024-06-26T01:16:12.123",
+    "traceId": "5373519c-4210-49b2-95b8-3c0208b61851",
+    "station": {
+        "code": "TEST1",
+        "name": "INDRA"
+    },
+    "transactionType": "4",
+    "channel": "2",
+    "data": {
+        "category": "A",
+        "laneId": "600001",
+        "tollReferenceCode": "10189_600117194257722020",
+        "directionWay": "TUN-SOG",
+        "readingType": 1,
+        "idTransaction": "1aafc0b8-f6d4-4b5d-91c5-a7b6e095d080",
+        "providerTraceId": "10189_600117194257722020_13",
+        "plate": "VEF978",
+        "contractNumber": "1",
+        "collectionAgreement": "8002352807",
+        "discleimerConcesion": "Este documento sustituye el recibo de pago de peajes que es equivalente a factura, cumpliendo con los requisitos establecidos en el artículo 617 del Estatuto Tributario",
+        "faceId": "CC001249",
+        "tid": "CC0000000000000000001249",
+        "epc": "770611308100023870000008",
+        "axisCount": "2",
+        "doubleWheelCount": "0",
+        "categoryDetected": "A",
+        "plateOCR": "VEF978",
+        "userListCode": "10037_20211130_00058T",
+        "userUpdateDate": "2021-11-30T09:10:06.077",
+        "existsDependency": "false",
+        "amountTollReference": 10300,
+        "motivoAjuste": 1,
+        "originator": "10055"
+    }
+}
