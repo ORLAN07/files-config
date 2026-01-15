@@ -51,3 +51,12 @@ aws lambda update-event-source-mapping --uuid 92f71306-6ac6-44a7-b76b-8e8bf13e21
 scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.1.146:/home/ubuntu/scripts/dynamodb/scans/fap_users.csv /Users/orlando.rubio/Documents/
 
 aws dynamodb get-item --table-name fap-parameters --key '{"keyParameter": {"S": "TRANSACTION_TYPES"}}'
+
+
+#Stop Commons Operation
+aws lambda update-event-source-mapping --uuid a7de10fd-3e8b-404b-bef9-b6647c1c306b --no-enabled
+aws lambda update-event-source-mapping --uuid 2914e2e8-da46-4b32-b70a-f5e78e7ce21b --no-enabled
+
+#Activate Commons Operation
+aws lambda update-event-source-mapping --uuid a7de10fd-3e8b-404b-bef9-b6647c1c306b --enabled --region us-east-2
+aws lambda update-event-source-mapping --uuid 2914e2e8-da46-4b32-b70a-f5e78e7ce21b --enabled --region us-east-2

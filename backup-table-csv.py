@@ -18,7 +18,7 @@ def scan_dynamodb(table_name):
         if not start_key:
             done = True
     return items
-def write_to_csv(items, filename='web-tags-paid.csv'):
+def write_to_csv(items, filename='fap-notifications-center.csv'):
     fieldnames = set()
     for item in items:
         fieldnames.update(item.keys())
@@ -28,7 +28,7 @@ def write_to_csv(items, filename='web-tags-paid.csv'):
         writer.writeheader()
         writer.writerows(items)
 def main():
-    table_name = 'fap-web-tags-paid'
+    table_name = 'fap-notifications-center'
     
     print(f"Iniciando el scan en la tabla '{table_name}' ...")
     items = scan_dynamodb(table_name)

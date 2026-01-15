@@ -5,10 +5,59 @@ Prod: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.156.5.207
 Máquinas FP Toll Powers:
 dev: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.155.12.226
 dev: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.155.13.137
-stg: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.155.17.253
+stg: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.155.17.239
 Prod: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.156.1.146
 Prod: ssh -i ~/.ssh/carroya_instance_key ubuntu@10.156.2.140
 
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.2.140:/home/ubuntu/scripts/dynamodb/users/fap-users.csv /home/ubuntu/scripts/dynamodb/autoenrollment-tags/
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.5.207:/home/ubuntu/dynamodb/scripts/scan_web_tags_paid/fap-web-tags-paid_scan.csv /Users/orlando.rubio/Documents/
+
+scp -i ~/.ssh/carroya_instance_key /Users/orlando.rubio/Documents/web-apps/files-config/update-accounts-migration.py ubuntu@10.156.2.140:/home/ubuntu/scripts/dynamodb/accounts/
+scp -i ~/.ssh/carroya_instance_key /Users/orlando.rubio/Documents/web-apps/files-config/accounts-migration.csv ubuntu@10.156.2.140:/home/ubuntu/scripts/dynamodb/accounts/
+
+scp -i ~/.ssh/carroya_instance_key /Users/orlando.rubio/Downloads/tags.csv ubuntu@10.156.5.207:/home/ubuntu/scripts/dynamodb/autoenrollment-tags/
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.5.207:/home/ubuntu/scripts/dynamodb/autoenrollment-tags/tags.csv /Users/orlando.rubio/Documents/
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.155.17.227:/home/ubuntu/scripts/dynamodb/autoenroment/fap-autoenrolmnet-tags-csv.csv /Users/orlando.rubio/Documents/
+
+scp -i ~/.ssh/carroya_instance_key /Users/orlando.rubio/Downloads/tags.csv ubuntu@10.156.5.207:/home/ubuntu/scripts/dynamodb/autoenrollment-tags/
+
+scp -i ~/.ssh/carroya_instance_key ubuntu@10.156.2.140:/home/ubuntu/scripts/dynamodb/notifications/notifications-sms-active.json /Users/orlando.rubio/Documents/
+
+aws dynamodb query \
+    --table-name fap-commons-pro-list-info \
+    --key-condition-expression "id = :id AND sortKey = :startSortKey" \
+    --expression-attribute-values '{
+        ":id": {"S": "2025-08-25"},
+        ":startSortKey": {"S": "2025-08-25T10:33:38.183183#2a8f7e1a-1a43-44e7-98d0-b534b5c0fe74"}
+    }' \
+    --select "COUNT"
+
+aws dynamodb update-item \
+    --table-name fap-commons-pro-list-info \
+    --region us-east-2 \
+    --key '{"id": {"S": "2025-08-25"}, "sortKey": {"S": "2025-08-25T10:33:38.183183#2a8f7e1a-1a43-44e7-98d0-b534b5c0fe74"}}' \
+    --update-expression 'SET #v = :newValue' \
+    --expression-attribute-names '{"#v": "status"}' \
+    --expression-attribute-values '{":newValue": {"N": "2"}}'
+
+{
+ "id": "2025-08-25",
+ "sortKey": "2025-08-25T10:33:38.183183#2a8f7e1a-1a43-44e7-98d0-b534b5c0fe74",
+ "balance": 25634300,
+ "balanceStatus": 1,
+ "category": "C2",
+ "clientNumber": "158990",
+ "epc": "770611310000000001349520",
+ "intermediaryCode": 10037,
+ "lowBalance": 0,
+ "modality": "PrepagoSimple",
+ "origin": "CORE-ACTIVATE-TAG",
+ "plate": "VKK570",
+ "status": 3,
+ "tid": "E2003412012C2900005C791C",
+ "ttl": 1758814418,
+ "version": "2025-08-25T10:33:38.183"
+}
 
 aws dynamodb query \
     --table-name fap-commons-pro-list-info \
@@ -51,3 +100,49 @@ aws dynamodb query \
   }
  ]
 }
+
+  aws dynamodb scan \
+  --table-name "fap-web-tags-paid" \
+  --filter-expression "attribute_not_exists(idAccount)" \
+  --select "COUNT"
+
+    
+aws dynamodb scan
+  --region us-east-2
+  --table-name "fap-movements-detail"
+  --filter-expression "begins_with(processDate, :datePrefix)"
+  --expression-attribute-values '{":datePrefix": {"S": "2025-10-28"}}'
+  --select "COUNT"
+
+
+
+  scp -i ~/.ssh/carroya_instance_key /Users/orlando.rubio/Documents/web-apps/files-config/update-accounts-migration.py ubuntu@10.155.13.137:/home/ubuntu/scripts/
+  scp -i ~/.ssh/carroya_instance_key /Users/orlando.rubio/Documents/web-apps/files-config/accounts-migration.csv ubuntu@10.155.13.137:/home/ubuntu/scripts/
+
+
+
+  aws dynamodb query \
+    --table-name fap-movements-detail \
+    --region us-east-2 \
+    --key-condition-expression "partitionKey = :id AND sortKey = :startSortKey" \
+    --expression-attribute-values '{
+        ":id": {"S": "141308319::PARQUEADERO::2026-01-14"},
+        ":startSortKey": {"S": "2026-01-14T06:27:41.739::DB::9bb85af7-b2db-4473-b718-e427bba8da02"}
+    }'
+
+aws dynamodb update-item \
+    --table-name fap-movements-detail \
+    --region us-east-2 \
+    --key '{"partitionKey": {"S": "141308319::PARQUEADERO::2026-01-14"}, "sortKey": {"S": "2026-01-14T06:27:41.739::DB::9bb85af7-b2db-4473-b718-e427bba8da02"}}' \
+    --update-expression 'SET #dateTransaction = :dateTransaction, #notifyDate = :notifyDate, #processDate = :processDate' \
+    --expression-attribute-names '{"#dateTransaction": "dateTransaction", "#notifyDate": "notifyDate", "#processDate": "processDate"}' \
+    --expression-attribute-values '{":dateTransaction": {"S": "2026-01-14T11:01:00"}, ":notifyDate": {"S": "2026-01-14T11:01:00"}, ":processDate": {"S": "2026-01-14T11:01:00.000"}}'
+
+
+aws dynamodb delete-item \
+    --table-name fap-movements-detail \
+    --region us-east-2 \
+    --key '{
+        "partitionKey": {"S": "141308319::PARQUEADERO::2026-01-14"},
+        "sortKey": {"S": "2026-01-14T06:27:41.739::DB::9bb85af7-b2db-4473-b718-e427bba8da02"}
+    }'

@@ -39,7 +39,7 @@ aws dynamodb update-item \
  --expression-attribute-values '{":h":{"N":"1"}}'
 
 
- scp -i ~/.ssh/carroya_instance_key /Users/orlando.rubio/Documents/files-config/fap_user_dev.csv ubuntu@10.155.12.226:/home/ubuntu/scripts/dynamodb/
+ scp -i ~/.ssh/carroya_instance_key /Users/orlando.rubio/Documents/files-config/users-status4.xlsx ubuntu@10.156.2.140:/home/ubuntu/scripts/dynamodb/users/
 
  scp -i ~/.ssh/carroya_instance_key ubuntu@10.155.12.226:/home/ubuntu/scripts/dynamodb/users_updated_addresses.csv /Users/orlando.rubio/Documents/
  scp -i ~/.ssh/carroya_instance_key ubuntu@10.155.13.137:/home/ubuntu/dynamodb/users/users-status.xlsx /Users/orlando.rubio/Documents/
@@ -241,3 +241,53 @@ aws dynamodb update-item \
  --update-expression 'SET #H = :h' \
  --expression-attribute-names '{"#H":"amount"}' \
  --expression-attribute-values '{":h":{"N":"20000000"}}'
+
+
+ aws lambda update-event-source-mapping --uuid 9d5e3bfc-ccd1-4f58-9271-13f5b8e5fc2f --no-enabled --region us-east-2
+ 
+
+ fields @requestId, @message
+| parse @message /"msg":"Inicia.*\[(?<codigo>\d+)\]/
+| parse @message /"msg":\{"to":\[(?<destinatario>[^\]]+)\]/
+| filter ispresent(codigo) or ispresent(destinatario)
+| stats 
+    latest(codigo) as notificationCode,
+    sum(if(destinatario like /^\"\+/, 1, 0)) as SMS,
+    sum(if(destinatario like /^\"[a-zA-Z]/, 1, 0)) as EMAIL
+    by @requestId
+| filter notificationCode in ["0503", "0009", "0005", "0504", "0001", "9999", "1003", "1000", "1001", "1002", "0507", "0502", "0004", "0501", "0006", "1004", "1006", "0003", "0007", "0602", "0002", "0313", "1005", "0318", "0013", "0312", "0305", "0620", "0314", "0623", "0330", "0701", "0622", "0008", "0331", "0505", "0015", "0017", "0506", "0520", "0618", "0521"]
+| stats 
+    sum(SMS) as totalSMS,
+    sum(EMAIL) as totalEMAIL
+    by notificationCode
+
+
+aws lambda update-event-source-mapping --uuid a7de10fd-3e8b-404b-bef9-b6647c1c306b --no-enabled
+aws lambda update-event-source-mapping --uuid 2914e2e8-da46-4b32-b70a-f5e78e7ce21b --no-enabled
+
+#Activate Commons Operation
+aws lambda update-event-source-mapping --uuid a7de10fd-3e8b-404b-bef9-b6647c1c306b --enabled --region us-east-2
+aws lambda update-event-source-mapping --uuid 2914e2e8-da46-4b32-b70a-f5e78e7ce21b --enabled --region us-east-2
+detener operacion stop operation
+#Activate Commons Operation
+
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+reestablecer key git
+
+
+--extra-py-files
+s3://fap-commons-dev-glue-jobs-scripts/jobs/scripts/libs/aws_services/dynamodb_client.py,s3://fap-commons-dev-glue-jobs-scripts/jobs/scripts/libs/aws_services/athena_client.py,s3://fap-commons-dev-glue-jobs-scripts/jobs/scripts/libs/aws_services/s3_client.py,s3://fap-commons-dev-glue-jobs-scripts/jobs/scripts/libs/aws_services/api_client.py,s3://fap-commons-dev-glue-jobs-scripts/jobs/scripts/libs/report_generators/excel_recharges_generator.py,s3://fap-commons-dev-glue-jobs-scripts/jobs/scripts/libs/utils/logger.py,s3://fap-commons-dev-glue-jobs-scripts/jobs/scripts/libs/utils/formatters.py,s3://fap-commons-dev-glue-jobs-scripts/jobs/scripts/libs/utils/date_utils.py,s3://fap-commons-dev-glue-jobs-scripts/jobs/scripts/reports/utils/Constants.py
+--JOB_NAME
+fap-commons-dev-job-report-recharges-job
+--report_id
+20251007130918725
+--initial_date
+2025-10-01
+--final_date
+2025-10-15
+--environment
+dev
+--reportType
+2
+--formatReport
+xlsx

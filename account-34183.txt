@@ -97,6 +97,10 @@ aws dynamodb scan \
    --table-name fap-electronic-invoices-fco \
    --select "COUNT"
 
+   aws dynamodb scan \
+   --table-name fap-autoenrolment-tags \
+   --select "COUNT"
+
 
 
 
@@ -115,5 +119,29 @@ aws dynamodb delete-item \
         "personId": {"S": "3891300513"}
     }'
 
+************
+
+aws dynamodb query \
+    --table-name fap-users-boss \
+    --key-condition-expression "personId = :partitionKey" \
+    --expression-attribute-values '{
+        ":partitionKey": {"S": "860026070"}
+    }'
+
+aws dynamodb delete-item \
+    --table-name fap-users-boss \
+    --key '{
+        "personId": {"S": "3891300513"}
+    }'
+
+aws dynamodb update-item \
+    --table-name fap-users-boss \
+    --region us-east-2 \
+    --key '{"personId": {"S": "3860026070"}}' \
+    --update-expression 'SET #v = :newValue' \
+    --expression-attribute-names '{"#v": "userStatus"}' \
+    --expression-attribute-values '{":newValue": {"N": "7"}}'
+
 
     
+aws s3 cp s3://fap-commons-pro-a5-generated-lists-storage/closed_T_list/ ./files-s3-total-list --recursive --exclude "*" --include "10037_20250724_*"

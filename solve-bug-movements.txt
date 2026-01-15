@@ -302,3 +302,17 @@ aws dynamodb update-item \
     --update-expression 'SET #v = :newValue' \
     --expression-attribute-names '{"#v": "balance"}' \
     --expression-attribute-values '{":newValue": {"N": "238400"}}'
+
+
+
+aws dynamodb query \
+    --region us-east-2 \
+    --table-name fap-commons-stg-history-movs-pre \
+    --index-name transaction_type-date_time_range-index \
+    --key-condition-expression "transactionType = :transactionType AND dateTimeRange BETWEEN :startDate AND :endDate" \
+    --expression-attribute-values '{
+        ":transactionType": {"N": "20"},
+        ":startDate": {"S": "2024-11-12T00:00:00.000"},
+        ":endDate": {"S": "2025-11-12T23:59:59.000"}
+    }' \
+    --select "COUNT"
