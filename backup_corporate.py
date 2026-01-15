@@ -5,7 +5,7 @@ import json
 dynamodb = boto3.client('dynamodb', region_name='us-east-2')
 
 # Specify the table name
-table_name = 'fap-users'
+table_name = 'fap-corporate-info'
 
 # Initialize ExclusiveStartKey
 exclusive_start_key = None
@@ -28,7 +28,7 @@ while True:
         break
 
 # Save the scan results to a JSON file
-with open('backup-users-all.json', 'w') as file:
-    json.dump(items, file, indent=4, ensure_ascii=False)
+with open('backup-corporate-all.json', 'w') as file:
+    json.dump(items, file, indent=4)
 
 print("Scan completed. Data saved to backup.json file.")
